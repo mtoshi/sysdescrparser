@@ -99,6 +99,24 @@ class SysDescrParser(object):
         series, version = self.parse_cisco_iosxr_series_version()
         return self._store(vendor, os, series, version)
 
+    def parse_arista_eos_series_version(self):
+        """Parse arista eos series version."""
+        regex = (r'version (.*) running on an')
+        pat = re.compile(regex)
+        print(self.raw)
+        res = pat.search(self.raw)
+        if res:
+            return (self.UNKNOWN, res.group(1))
+
+        return (self.UNKNOWN, self.UNKNOWN)
+
+    def parse_arista_eos(self):
+        """Parse arista eos."""
+        vendor = 'arista'
+        os = 'eos'
+        series, version = self.parse_arista_eos_series_version()
+        return self._store(vendor, os, series, version)
+
     def parse(self):
         """Parse."""
         # cisco ios
@@ -113,6 +131,10 @@ class SysDescrParser(object):
         # cisco iosxr
         elif re.compile(r'^Cisco IOS XR').search(self.raw):
             self.parse_cisco_iosxr()
+
+        # arista eos
+        elif re.compile(r'^Arista Networks EOS').search(self.raw):
+            self.parse_arista_eos()
 
         else:
             print('[error] not support "%s".' % self.raw)
