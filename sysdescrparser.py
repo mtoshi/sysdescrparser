@@ -39,8 +39,7 @@ class SysDescrParser(object):
 
     def parse_cisco_ios_series_version(self):
         """Parse cisco ios version."""
-        regex = (r'Cisco IOS Software,'
-                 r'.* Software \((.*)\), Version (.*), RELEASE SOFTWARE')
+        regex = (r'Software \((.*)\), Version (.*), .* RELEASE SOFTWARE')
         pat = re.compile(regex, re.I)
         res = pat.search(self.raw)
         if res:
@@ -56,7 +55,7 @@ class SysDescrParser(object):
 
     def parse(self):
         """Parse."""
-        pat = re.compile(r'cisco ios', re.I)
+        pat = re.compile(r'^Cisco .* Software ..IOS')
         if pat.search(self.raw):
             self.parse_cisco_ios()
 

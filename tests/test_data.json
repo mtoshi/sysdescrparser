@@ -1,0 +1,25 @@
+[
+    {
+        "raw": "Cisco Internetwork Operating System Software ..IOS (tm) C1700 Software (C1700-Y-M), Version 12.2(4)YB, EARLY DEPLOYMENT RELEASE SOFTWARE (fc1)..Synched to technology version 12.2(6.8)T2..TAC Support: http://www.cisco.com/tac..Copyright (c) 1986-2002 by ci",
+        "vendor": "cisco",
+        "os": "cisco-ios",
+        "series": "C1700-Y-M",
+        "version": "12.2(4)YB"
+    },
+
+    {
+        "raw": "Cisco Internetwork Operating System Software ..IOS (tm) C2600 Software (C2600-I-M), Version 12.0(3)T3,  RELEASE SOFTWARE (fc1)..Copyright (c) 1986-1999 by cisco Systems, Inc...Compiled Thu 15-Apr-99 15:41 by kpma",
+        "vendor": "cisco",
+        "os": "cisco-ios",
+        "series": "C2600-I-M",
+        "version": "12.0(3)T3"
+    },
+
+    {
+        "raw": "aaaaaaaaaa",
+        "vendor": "UNKNOWN",
+        "os": "UNKNOWN",
+        "series": "UNKNOWN",
+        "version": "UNKNOWN"
+    }
+]

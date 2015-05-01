@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""sysdescrparser setup.py"""
+"""sysdescrparser setup.py."""
 
 from setuptools import setup
 from setuptools.command.test import test as TestCommand
