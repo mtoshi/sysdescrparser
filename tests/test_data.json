@@ -32,6 +32,14 @@
     },
 
     {
+        "raw": "Cisco NX-OS(tm) m9100, Software (m9100-s2ek9-mz), Version 4.1(1c), RELEASE SOFTWARE Copyright (c) 2002-2008 by Cisco Systems, Inc. Compiled 11/24/2008 18:00:00",
+        "vendor": "cisco",
+        "os": "cisco-nxos",
+        "series": "m9100-s2ek9-mz",
+        "version": "4.1(1c)"
+    },
+
+    {
         "raw": "aaaaaaaaaa",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
