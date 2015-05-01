@@ -99,11 +99,33 @@ class SysDescrParser(object):
         series, version = self.parse_cisco_iosxr_series_version()
         return self._store(vendor, os, series, version)
 
+    def parse_juniper_junos_series_version(self):
+        """Parse juniper junos series version."""
+        regex = (r'Inc. (.*) internet router, kernel JUNOS (.*) #')
+        pat = re.compile(regex)
+        res = pat.search(self.raw)
+        if res:
+            return (res.group(1), res.group(2))
+
+        regex = (r'Inc. (.*) Edge .* Version : \((.*)\) Build')
+        pat = re.compile(regex)
+        res = pat.search(self.raw)
+        if res:
+            return (res.group(1), res.group(2))
+
+        return (self.UNKNOWN, self.UNKNOWN)
+
+    def parse_juniper_junos(self):
+        """Parse juniper junos."""
+        vendor = 'juniper'
+        os = 'junos'
+        series, version = self.parse_juniper_junos_series_version()
+        return self._store(vendor, os, series, version)
+
     def parse_arista_eos_series_version(self):
         """Parse arista eos series version."""
         regex = (r'version (.*) running on an')
         pat = re.compile(regex)
-        print(self.raw)
         res = pat.search(self.raw)
         if res:
             return (self.UNKNOWN, res.group(1))
@@ -131,6 +153,10 @@ class SysDescrParser(object):
         # cisco iosxr
         elif re.compile(r'^Cisco IOS XR').search(self.raw):
             self.parse_cisco_iosxr()
+
+        # juniper junos
+        elif re.compile(r'^Juniper Networks').search(self.raw):
+            self.parse_juniper_junos()
 
         # arista eos
         elif re.compile(r'^Arista Networks EOS').search(self.raw):
