@@ -47,6 +47,7 @@ class UnitTests(unittest.TestCase):
 
             write(path, res)
 
+            self.assertEqual(obj.__str__(), descr['vendor'])
             self.assertEqual(obj.vendor, descr['vendor'])
             self.assertEqual(obj.os, descr['os'])
             self.assertEqual(obj.series, descr['series'])
