@@ -40,6 +40,14 @@
     },
 
     {
+        "raw": "Cisco NX-OS(tm) n3000, Software (n3000-uk9), Version 5.0(3)U1(2), Interim version 5.0(3)U1(1.319), RELEASE SOFTWARE Copyright (c) 2002-2011 by Cisco Systems, Inc. Device Manager Version 5.2(1), Compiled 7/10/2011 6:00:00",
+        "vendor": "cisco",
+        "os": "cisco-nxos",
+        "series": "n3000-uk9",
+        "version": "5.0(3)U1(2)"
+    },
+
+    {
         "raw": "aaaaaaaaaa",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
