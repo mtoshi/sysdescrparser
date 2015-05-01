@@ -60,7 +60,7 @@
         "vendor": "cisco",
         "os": "cisco-iosxr",
         "series": "ASR9K",
-        "version": "4.2.3"
+        "version": "4.2.3[Default]"
     },
 
     {
@@ -68,7 +68,15 @@
         "vendor": "cisco",
         "os": "cisco-iosxr",
         "series": "12816/PRP",
-        "version": "4.3.2"
+        "version": "4.3.2[Default]"
+    },
+
+    {
+        "raw": "Cisco IOS XR Software (Cisco 12404/PRP), Version 3.6.0[00] Copyright (c) 2007 by Cisco Systems, Inc.",
+        "vendor": "cisco",
+        "os": "cisco-iosxr",
+        "series": "12404/PRP",
+        "version": "3.6.0[00]"
     },
 
     {
