@@ -83,6 +83,13 @@ class SysDescrParser(object):
         res = pat.search(self.raw)
         if res:
             return (res.group(1), res.group(2))
+
+        regex = (r'Software \(Cisco (.*)\), Version (.*)\[')
+        pat = re.compile(regex)
+        res = pat.search(self.raw)
+        if res:
+            return (res.group(1), res.group(2))
+
         return (self.UNKNOWN, self.UNKNOWN)
 
     def parse_cisco_iosxr(self):

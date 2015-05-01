@@ -64,6 +64,14 @@
     },
 
     {
+        "raw": "Cisco IOS XR Software (Cisco 12816/PRP), Version 4.3.2[Default] Copyright (c) 2014 by Cisco Systems, Inc.",
+        "vendor": "cisco",
+        "os": "cisco-iosxr",
+        "series": "12816/PRP",
+        "version": "4.3.2"
+    },
+
+    {
         "raw": "aaaaaaaaaa",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
