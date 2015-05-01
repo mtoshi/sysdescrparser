@@ -76,16 +76,36 @@ class SysDescrParser(object):
         series, version = self.parse_cisco_nxos_series_version()
         return self._store(vendor, os, series, version)
 
+    def parse_cisco_iosxr_series_version(self):
+        """Parse cisco iosxr version."""
+        regex = (r'Software \(Cisco (.*) Series\), Version (.*)\[')
+        pat = re.compile(regex)
+        res = pat.search(self.raw)
+        if res:
+            return (res.group(1), res.group(2))
+        return (self.UNKNOWN, self.UNKNOWN)
+
+    def parse_cisco_iosxr(self):
+        """Parse cisco iosxr."""
+        vendor = 'cisco'
+        os = 'cisco-iosxr'
+        series, version = self.parse_cisco_iosxr_series_version()
+        return self._store(vendor, os, series, version)
+
     def parse(self):
         """Parse."""
         # cisco ios
         if re.compile(
-                r'^Cisco .* Software ..IOS|^Cisco IOS').search(self.raw):
+                r'^Cisco .* Software ..IOS|^Cisco IOS Soft').search(self.raw):
             self.parse_cisco_ios()
 
-        # cisco nx-os
+        # cisco nxos
         elif re.compile(r'^Cisco NX-OS').search(self.raw):
             self.parse_cisco_nxos()
+
+        # cisco iosxr
+        elif re.compile(r'^Cisco IOS XR').search(self.raw):
+            self.parse_cisco_iosxr()
 
         else:
             print('[error] not support "%s".' % self.raw)

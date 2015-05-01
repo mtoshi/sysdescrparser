@@ -56,6 +56,14 @@
     },
 
     {
+        "raw": "Cisco IOS XR Software (Cisco ASR9K Series), Version 4.2.3[Default] Copyright (c) 2013 by Cisco Systems, Inc.",
+        "vendor": "cisco",
+        "os": "cisco-iosxr",
+        "series": "ASR9K",
+        "version": "4.2.3"
+    },
+
+    {
         "raw": "aaaaaaaaaa",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
