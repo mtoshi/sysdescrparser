@@ -24,6 +24,14 @@
     },
 
     {
+        "raw": "Cisco NX-OS(tm) cgr1000, Software (cgr1000-uk9), Version 5.2(1)CG2(1), Interim version 5.2(1)CG2(0.167), RELEASE SOFTWARE Copyright (c) 2002-2011 by Cisco Systems, Inc. Compiled 1/1/2012 1:00:00",
+        "vendor": "cisco",
+        "os": "cisco-nxos",
+        "series": "cgr1000-uk9",
+        "version": "5.2(1)CG2(1)"
+    },
+
+    {
         "raw": "aaaaaaaaaa",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
