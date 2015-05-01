@@ -16,6 +16,14 @@
     },
 
     {
+        "raw": "Cisco IOS Software, C1700 Software (C1700-ADVSECURITYK9-M), Version 12.3(11)YZ2, RELEASE SOFTWARE (fc2)..Technical Support: http://www.cisco.com/techsupport..Copyright (c) 1986-2007 by Cisco Systems, Inc...Compiled Wed 08-Aug-07 19:22 by dchih",
+        "vendor": "cisco",
+        "os": "cisco-ios",
+        "series": "C1700-ADVSECURITYK9-M",
+        "version": "12.3(11)YZ2"
+    },
+
+    {
         "raw": "aaaaaaaaaa",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
