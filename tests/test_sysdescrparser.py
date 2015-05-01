@@ -18,18 +18,52 @@ class UnitTests(unittest.TestCase):
 
     def setUp(self):
         """Setup."""
-        here = os.path.dirname(os.path.abspath(__file__))
-        path = os.path.join(here, 'test_data.json')
+        self.result_file = 'test_result.txt'
+        self.here = os.path.dirname(os.path.abspath(__file__))
+        path = os.path.join(self.here, 'test_data.json')
         self.descrs = json_load(path)
 
     def test_parse(self):
         """test parse."""
+        path = os.path.join(self.here, self.result_file)
+        remove(path)
+
         for descr in self.descrs:
+
             obj = SysDescrParser(descr['raw'])
+
+            res = ' '.join([
+                obj.vendor,
+                obj.os,
+                obj.series,
+                obj.version,
+                ' --- ',
+                descr['vendor'],
+                descr['os'],
+                descr['series'],
+                descr['version'],
+                '\n',
+            ])
+
+            write(path, res)
+
             self.assertEqual(obj.vendor, descr['vendor'])
             self.assertEqual(obj.os, descr['os'])
             self.assertEqual(obj.series, descr['series'])
             self.assertEqual(obj.version, descr['version'])
+
+
+def remove(path):
+    """Remove file."""
+    is_exists = os.path.isfile(path)
+    if is_exists:
+        os.remove(path)
+
+
+def write(path, content):
+    """Write to file."""
+    with open(path, 'a') as _file:
+        return _file.write(content)
 
 
 def json_load(path):
