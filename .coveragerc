@@ -1,12 +1,10 @@
 [run]
 source=
-    sysdescrparser/
-    ; sysdescrparser.py
+    sysdescrparser.py
 
 omit=
     */__*,
     */tests/*,
-    */migrations/*
 
 [html]
 directory=docs/htmlcov

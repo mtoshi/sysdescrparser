@@ -68,7 +68,6 @@ setup(
     license='MIT',
     classifiers=classifiers,
     py_modules=['sysdescrparser'],
-    # packages=['sysdescrparser'],
     data_files=[],
     install_requires=requires,
     include_package_data=True,
