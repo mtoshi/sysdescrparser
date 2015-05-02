@@ -49,7 +49,7 @@ class SysDescrParser(object):
     def parse_cisco_ios(self):
         """Parse cisco ios."""
         vendor = 'cisco'
-        os = 'cisco-ios'
+        os = 'ios'
         series, version = self.parse_cisco_ios_series_version()
         return self._store(vendor, os, series, version)
 
@@ -72,7 +72,7 @@ class SysDescrParser(object):
     def parse_cisco_nxos(self):
         """Parse cisco nxos."""
         vendor = 'cisco'
-        os = 'cisco-nxos'
+        os = 'nxos'
         series, version = self.parse_cisco_nxos_series_version()
         return self._store(vendor, os, series, version)
 
@@ -95,7 +95,7 @@ class SysDescrParser(object):
     def parse_cisco_iosxr(self):
         """Parse cisco iosxr."""
         vendor = 'cisco'
-        os = 'cisco-iosxr'
+        os = 'iosxr'
         series, version = self.parse_cisco_iosxr_series_version()
         return self._store(vendor, os, series, version)
 
