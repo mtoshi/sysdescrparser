@@ -1,6 +1,6 @@
 [run]
 source=
-    sysdescrparser.py
+    sysdescrparser
 
 omit=
     */__*,
