@@ -1,31 +1,6 @@
 cisco ios C1700-Y-M 12.2(4)YB  ---  cisco ios C1700-Y-M 12.2(4)YB 
 cisco ios C2600-I-M 12.0(3)T3  ---  cisco ios C2600-I-M 12.0(3)T3 
-cisco ios C1700-ADVSECURITYK9-M 12.3(11)YZ2  ---  cisco ios C1700-ADVSECURITYK9-M 12.3(11)YZ2 
 cisco nxos cgr1000-uk9 5.2(1)CG2(1)  ---  cisco nxos cgr1000-uk9 5.2(1)CG2(1) 
 cisco nxos m9100-s2ek9-mz 4.1(1c)  ---  cisco nxos m9100-s2ek9-mz 4.1(1c) 
 cisco nxos n3000-uk9 5.0(3)U1(2)  ---  cisco nxos n3000-uk9 5.0(3)U1(2) 
 cisco nxos n5000-uk9 4.1(3)N1(1a)  ---  cisco nxos n5000-uk9 4.1(3)N1(1a) 
-cisco iosxr ASR9K 4.2.3[Default]  ---  cisco iosxr ASR9K 4.2.3[Default] 
-cisco iosxr 12816/PRP 4.3.2[Default]  ---  cisco iosxr 12816/PRP 4.3.2[Default] 
-cisco iosxr 12404/PRP 3.6.0[00]  ---  cisco iosxr 12404/PRP 3.6.0[00] 
-juniper junos ex2200-24t-4g 10.2R1.8  ---  juniper junos ex2200-24t-4g 10.2R1.8 
-juniper junos ex2200-48t-4g 10.2R1.8  ---  juniper junos ex2200-48t-4g 10.2R1.8 
-juniper junos ex2200-c-12t-2g 11.3R1.7  ---  juniper junos ex2200-c-12t-2g 11.3R1.7 
-juniper junos ex3200-24p 11.1R3.5  ---  juniper junos ex3200-24p 11.1R3.5 
-juniper junos ex4200-24f 10.0S1.1  ---  juniper junos ex4200-24f 10.0S1.1 
-juniper junos ex4200-24t 10.2R1.8  ---  juniper junos ex4200-24t 10.2R1.8 
-juniper junos ex4500-40f 11.1R3.5  ---  juniper junos ex4500-40f 11.1R3.5 
-juniper junos j2300 8.5-20080528.0  ---  juniper junos j2300 8.5-20080528.0 
-juniper junos j6300 8.1R1.5  ---  juniper junos j6300 8.1R1.5 
-juniper junos jsr2320 9.2R1.10  ---  juniper junos jsr2320 9.2R1.10 
-juniper junos m10 7.6R3.6  ---  juniper junos m10 7.6R3.6 
-juniper junos m20 6.3R2.2  ---  juniper junos m20 6.3R2.2 
-juniper junos m120 10.0S14  ---  juniper junos m120 10.0S14 
-juniper junos mx480 11.2R1.10  ---  juniper junos mx480 11.2R1.10 
-juniper junos srx1400 10.4R3.4  ---  juniper junos srx1400 10.4R3.4 
-juniper junos ERX-700 11.1.0 release-0.0 [BuildId 12065]  ---  juniper junos ERX-700 11.1.0 release-0.0 [BuildId 12065] 
-juniper junos RX1400 10.3.2 patch-0.2 [BuildId 12841]  ---  juniper junos RX1400 10.3.2 patch-0.2 [BuildId 12841] 
-arista eos UNKNOWN 4.12.7.1  ---  arista eos UNKNOWN 4.12.7.1 
-arista eos UNKNOWN 4.13.6F  ---  arista eos UNKNOWN 4.13.6F 
-arista eos UNKNOWN 4.13.0-1505357.cacupertinodev.1 (engineering build)  ---  arista eos UNKNOWN 4.13.0-1505357.cacupertinodev.1 (engineering build) 
-UNKNOWN UNKNOWN UNKNOWN UNKNOWN  ---  UNKNOWN UNKNOWN UNKNOWN UNKNOWN 
