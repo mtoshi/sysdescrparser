@@ -9,6 +9,7 @@ import re
 sys.path.append(os.path.dirname(__file__))
 from cisco_ios import CiscoIOS
 from cisco_nxos import CiscoNXOS
+from cisco_iosxr import CiscoIOSXR
 from unknown import Unknown
 
 
@@ -28,9 +29,11 @@ def sysdescrparser(sysdescr):
     elif re.compile(r'^Cisco NX-OS').search(sysdescr):
         return CiscoNXOS(sysdescr)
 
-    # # cisco iosxr
-    # elif re.compile(r'^Cisco IOS XR').search(sysdescr):
-    #     self.parse_cisco_iosxr()
+    #
+    # cisco iosxr
+    #
+    elif re.compile(r'^Cisco IOS XR').search(sysdescr):
+        return CiscoIOSXR(sysdescr)
 
     # # juniper junos
     # elif re.compile(r'^Juniper Networks').search(sysdescr):

@@ -16,6 +16,14 @@
     },
 
     {
+        "raw": "Cisco IOS Software, C1700 Software (C1700-ADVSECURITYK9-M), Version 12.3(11)YZ2, RELEASE SOFTWARE (fc2)..Technical Support: http://www.cisco.com/techsupport..Copyright (c) 1986-2007 by Cisco Systems, Inc...Compiled Wed 08-Aug-07 19:22 by dchih",
+        "vendor": "cisco",
+        "os": "ios",
+        "series": "C1700-ADVSECURITYK9-M",
+        "version": "12.3(11)YZ2"
+    },
+
+    {
         "raw": "Cisco NX-OS(tm) cgr1000, Software (cgr1000-uk9), Version 5.2(1)CG2(1), Interim version 5.2(1)CG2(0.167), RELEASE SOFTWARE Copyright (c) 2002-2011 by Cisco Systems, Inc. Compiled 1/1/2012 1:00:00",
         "vendor": "cisco",
         "os": "nxos",
@@ -45,5 +53,29 @@
         "os": "nxos",
         "series": "n5000-uk9",
         "version": "4.1(3)N1(1a)"
+    },
+
+    {
+        "raw": "Cisco IOS XR Software (Cisco ASR9K Series), Version 4.2.3[Default] Copyright (c) 2013 by Cisco Systems, Inc.",
+        "vendor": "cisco",
+        "os": "iosxr",
+        "series": "ASR9K",
+        "version": "4.2.3[Default]"
+    },
+
+    {
+        "raw": "Cisco IOS XR Software (Cisco 12816/PRP), Version 4.3.2[Default] Copyright (c) 2014 by Cisco Systems, Inc.",
+        "vendor": "cisco",
+        "os": "iosxr",
+        "series": "12816/PRP",
+        "version": "4.3.2[Default]"
+    },
+
+    {
+        "raw": "Cisco IOS XR Software (Cisco 12404/PRP), Version 3.6.0[00] Copyright (c) 2007 by Cisco Systems, Inc.",
+        "vendor": "cisco",
+        "os": "iosxr",
+        "series": "12404/PRP",
+        "version": "3.6.0[00]"
     }
 ]
