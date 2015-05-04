@@ -40,8 +40,7 @@ class SysDescr(object):
     @abstractmethod
     def parse(self):
         """Parsing."""
-        self._store(self.UNKNOWN,
-                    self.UNKNOWN,
-                    self.UNKNOWN,
-                    self.UNKNOWN)
-        return self
+        return self._store(self.UNKNOWN,
+                           self.UNKNOWN,
+                           self.UNKNOWN,
+                           self.UNKNOWN)

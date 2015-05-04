@@ -20,4 +20,7 @@ class Unknown(SysDescr):
 
     def parse(self):
         """Parse."""
-        return super().parse()
+        return self._store(self.UNKNOWN,
+                           self.UNKNOWN,
+                           self.UNKNOWN,
+                           self.UNKNOWN)
