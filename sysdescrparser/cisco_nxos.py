@@ -23,20 +23,18 @@ class CiscoNXOS(SysDescr):
         series = self.UNKNOWN
         version = self.UNKNOWN
 
-        regex = (r'Software \((.*)\), Version (.*), Interim version .*RELEASE')
-        pat = re.compile(regex)
-        res = pat.search(self.raw)
-        if res:
-            series = res.group(1)
-            version = res.group(2)
-            return self._store(vendor, os, series, version)
-
         regex = (r'Software \((.*)\), Version (.*), .*RELEASE')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
             series = res.group(1)
             version = res.group(2)
-            return self._store(vendor, os, series, version)
 
-        return (self.UNKNOWN, self.UNKNOWN)
+        regex = (r'Software \((.*)\), Version (.*), Interim version .*RELEASE')
+        pat = re.compile(regex)
+        res = pat.search(self.raw)
+        if res:
+            series = res.group(1)
+            version = res.group(2)
+
+        return self._store(vendor, os, series, version)
