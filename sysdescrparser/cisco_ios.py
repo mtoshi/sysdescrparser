@@ -16,10 +16,6 @@ class CiscoIOS(SysDescr):
 
     """
 
-    def __init__(self, raw):
-        """Constructor."""
-        super(CiscoIOS, self).__init__(raw)
-
     def parse(self):
         """Parse."""
         vendor = 'cisco'

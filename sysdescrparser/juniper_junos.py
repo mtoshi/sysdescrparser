@@ -16,10 +16,6 @@ class JuniperJunos(SysDescr):
 
     """
 
-    def __init__(self, raw):
-        """Constructor."""
-        super(JuniperJunos, self).__init__(raw)
-
     def parse(self):
         """Parse."""
         vendor = 'juniper'
