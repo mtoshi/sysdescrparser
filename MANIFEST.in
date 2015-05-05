@@ -3,4 +3,4 @@ include README.rst
 include LICENSE
 include requirements.txt
 recursive-include docs *.rst
-recursive-include sysdescrparser *.py *.txt
+recursive-include sysdescrparser *.py *.txt *.json
