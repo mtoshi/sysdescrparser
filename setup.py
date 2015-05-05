@@ -3,6 +3,7 @@
 """sysdescrparser setup.py."""
 
 from setuptools import setup
+from setuptools import find_packages
 from setuptools.command.test import test as TestCommand
 import sys
 import os
@@ -53,9 +54,10 @@ with open(os.path.join(here, 'README.rst')) as _file:
     README = _file.read()
 
 requires = []
-
 with open('requirements.txt', 'w') as _file:
     _file.write('\n'.join(requires))
+
+EXCLUDE_FROM_PACKAGES = ['tests']
 
 setup(
     name="sysdescrparser",
@@ -67,6 +69,7 @@ setup(
     url='rewrite here.',
     license='MIT',
     classifiers=classifiers,
+    packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
     py_modules=['sysdescrparser'],
     data_files=[],
     install_requires=requires,
