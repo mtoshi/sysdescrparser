@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""sysdescrparser."""
+"""sysdescrparser.sysdescr."""
 
 
 from abc import ABCMeta
@@ -14,12 +14,32 @@ class SysDescr(object, metaclass=ABCMeta):
 
     SNMP sysDescr.
 
+    This class is abstract.
+
+    Attributes:
+
+        :raw (str): SNMP sysDescr raw string.
+        :vendor (str): = Vendor name. Default is None.
+        :os (str): = OS name. Default is None.
+        :series (str): = Series name. Default is None.
+        :version (str): = Version information. Default is None.
+
+    Abstract methods:
+
+        :parse: Sub class has to implement this parse method.
+
     """
 
     UNKNOWN = 'UNKNOWN'
 
     def __init__(self, raw):
-        """Constructor."""
+        """Constructor.
+
+        Args:
+
+            :raw (str): SNMP sysDescr raw string.
+
+        """
         self.raw = raw
         self.vendor = None
         self.os = None
@@ -28,7 +48,20 @@ class SysDescr(object, metaclass=ABCMeta):
         self.parse()
 
     def _store(self, vendor, os, series, version):
-        """Store attributes."""
+        """Store attributes.
+
+        Args:
+
+            :vendor (str): Vendor name.
+            :os (str): OS name.
+            :series (str): Series name.
+            :version (str): Version information.
+
+        Returns:
+
+            :self: This object itself.
+
+        """
         self.vendor = vendor
         self.os = os
         self.series = series
@@ -37,9 +70,14 @@ class SysDescr(object, metaclass=ABCMeta):
 
     @abstractmethod
     def parse(self):
-        """Parsing."""
-        self._store(self.UNKNOWN,
-                    self.UNKNOWN,
-                    self.UNKNOWN,
-                    self.UNKNOWN)
-        return self
+        """Parsing.
+
+        This method is abstract.
+
+        Sub class has to implement this method.
+
+        """
+        return self._store(self.UNKNOWN,
+                           self.UNKNOWN,
+                           self.UNKNOWN,
+                           self.UNKNOWN)
