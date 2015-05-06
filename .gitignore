@@ -13,3 +13,4 @@ dist/
 .cache/
 htmlcov/
 migrations/
+test_result.txt

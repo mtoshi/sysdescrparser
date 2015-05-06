@@ -1,8 +1,13 @@
 [MASTER]
 load-plugins=
+init-hook='sys.path = ["sysdescrparser"]'
 
 [MESSAGES CONTROL]
 disable=
+    no-name-in-module,
+    duplicate-code,
+    import-error,
+    no-init,
     too-few-public-methods,
     invalid-name,
     no-member

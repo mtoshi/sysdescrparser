@@ -5,14 +5,14 @@
 import unittest
 import os
 import json
-from sysdescrparser import SysDescrParser
+from sysdescrparser import sysdescrparser
 
 
 class UnitTests(unittest.TestCase):
 
     """Class UnitTest.
 
-    Unit test for SysDescrParser.
+    Unit test for sysdescrparser.
 
     """
 
@@ -30,7 +30,7 @@ class UnitTests(unittest.TestCase):
 
         for descr in self.descrs:
 
-            obj = SysDescrParser(descr['raw'])
+            obj = sysdescrparser(descr['raw'])
 
             res = ' '.join([
                 obj.vendor,
@@ -47,7 +47,6 @@ class UnitTests(unittest.TestCase):
 
             write(path, res)
 
-            self.assertEqual(obj.__str__(), descr['vendor'])
             self.assertEqual(obj.vendor, descr['vendor'])
             self.assertEqual(obj.os, descr['os'])
             self.assertEqual(obj.series, descr['series'])

@@ -213,37 +213,6 @@
         "os": "junos",
         "series": "RX1400",
         "version": "10.3.2 patch-0.2 [BuildId 12841]"
-    },
-
-    {
-        "raw": "Arista Networks EOS version 4.12.7.1 running on an Arista Networks",
-        "vendor": "arista",
-        "os": "eos",
-        "series": "UNKNOWN",
-        "version": "4.12.7.1"
-    },
-
-    {
-        "raw": "Arista Networks EOS version 4.13.6F running on an Arista Networks",
-        "vendor": "arista",
-        "os": "eos",
-        "series": "UNKNOWN",
-        "version": "4.13.6F"
-    },
-
-    {
-        "raw": "Arista Networks EOS version 4.13.0-1505357.cacupertinodev.1 (engineering build) running on an Arista Networks",
-        "vendor": "arista",
-        "os": "eos",
-        "series": "UNKNOWN",
-        "version": "4.13.0-1505357.cacupertinodev.1 (engineering build)"
-    },
-
-    {
-        "raw": "aaaaaaaaaa",
-        "vendor": "UNKNOWN",
-        "os": "UNKNOWN",
-        "series": "UNKNOWN",
-        "version": "UNKNOWN"
     }
+
 ]
