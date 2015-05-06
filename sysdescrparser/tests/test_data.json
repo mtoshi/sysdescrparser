@@ -240,11 +240,43 @@
     },
 
     {
-        "raw": "Brocade Communication Systems, Inc. TurboIron-X24, IronWare Version 04.2.00b Compiled on Oct 22 2010 at 15:15:36 labeled as TIS04200b",
+        "raw": "Brocade NetIron CES, IronWare Version V5.2.0cT183 Compiled on Oct 28 2011 at 02:58:44 labeled as V5.2.00c",
         "vendor": "brocade",
         "os": "ironware",
-        "series": "TurboIron-X24",
-        "version": "04.2.00b"
+        "series": "CES",
+        "version": "V5.2.0cT183"
+    },
+
+    {
+        "raw": "Brocade NetIron MLX (System Mode: MLX), IronWare Version V5.4.0cT163 Compiled on Mar 25 2013 at 17:08:16 labeled as V5.4.00c",
+        "vendor": "brocade",
+        "os": "ironware",
+        "series": "MLX",
+        "version": "V5.4.0cT163"
+    },
+
+    {
+        "raw": "Brocade Backbone (System Mode: MLX), IronWare Version V5.1.0dT163 Compiled on Aug 19 2011 at 19:00:39 labeled as V5.1.00d",
+        "vendor": "brocade",
+        "os": "ironware",
+        "series": "MLX",
+        "version": "V5.1.0dT163"
+    },
+
+    {
+        "raw": "Brocade MLXe (System Mode: MLX), IronWare Version V5.3.0T163 Compiled on Jan  3 2012 at 18:01:00 labeled as V5.3.00b460",
+        "vendor": "brocade",
+        "os": "ironware",
+        "series": "MLX",
+        "version": "V5.3.0T163"
+    },
+
+    {
+        "raw": "Brocade VDX Switch.",
+        "vendor": "brocade",
+        "os": "UNKNOWN",
+        "series": "VDX",
+        "version": "UNKNOWN"
     },
 
     {

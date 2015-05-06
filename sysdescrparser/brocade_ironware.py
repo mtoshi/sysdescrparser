@@ -30,4 +30,26 @@ class BrocadeIronWare(SysDescr):
             series = res.group(1)
             version = res.group(2)
 
+        regex = (r'NetIron (.*), IronWare Version (.*) Compiled')
+        pat = re.compile(regex)
+        res = pat.search(self.raw)
+        if res:
+            series = res.group(1)
+            version = res.group(2)
+
+        regex = (r'\(System Mode: (.*)\), IronWare Version (.*) Compiled')
+        pat = re.compile(regex)
+        res = pat.search(self.raw)
+        if res:
+            series = res.group(1)
+            version = res.group(2)
+
+        regex = (r'^Brocade (.*) Switch.$')
+        pat = re.compile(regex)
+        res = pat.search(self.raw)
+        if res:
+            series = res.group(1)
+            os = self.UNKNOWN
+            version = self.UNKNOWN
+
         return self._store(vendor, os, series, version)

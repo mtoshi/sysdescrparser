@@ -45,7 +45,7 @@ def sysdescrparser(sysdescr):
     #
     # brocade ironware
     #
-    elif re.compile(r'^Brocade.*IronWare ').search(sysdescr):
+    elif re.compile(r'^Brocade ').search(sysdescr):
         return BrocadeIronWare(sysdescr)
     #
     # arista eos
