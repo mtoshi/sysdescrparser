@@ -232,6 +232,22 @@
     },
 
     {
+        "raw": "Brocade Communications Systems, Inc. FESX624+2XG, IronWare Version 07.3.00cT3e1 Compiled on Apr 25 2012 at 17:01:00 labeled as SXS07300c",
+        "vendor": "brocade",
+        "os": "ironware",
+        "series": "FESX624+2XG",
+        "version": "07.3.00cT3e1"
+    },
+
+    {
+        "raw": "Brocade Communication Systems, Inc. TurboIron-X24, IronWare Version 04.2.00b Compiled on Oct 22 2010 at 15:15:36 labeled as TIS04200b",
+        "vendor": "brocade",
+        "os": "ironware",
+        "series": "TurboIron-X24",
+        "version": "04.2.00b"
+    },
+
+    {
         "raw": "Arista Networks EOS version 4.12.7.1 running on an Arista Networks DCS-7150S-24",
         "vendor": "arista",
         "os": "eos",
