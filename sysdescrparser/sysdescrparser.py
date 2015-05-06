@@ -12,6 +12,9 @@ from cisco_ios import CiscoIOS
 from cisco_nxos import CiscoNXOS
 from cisco_iosxr import CiscoIOSXR
 from juniper_junos import JuniperJunos
+from brocade_ironware import BrocadeIronWare
+from brocade_serveriron import BrocadeServerIron
+from brocade_networkos import BrocadeNetworkOS
 from arista_eos import AristaEOS
 from unknown import Unknown
 
@@ -41,6 +44,21 @@ def sysdescrparser(sysdescr):
     #
     elif re.compile(r'^Juniper Networks').search(sysdescr):
         return JuniperJunos(sysdescr)
+    #
+    # brocade ironware
+    #
+    elif re.compile(r'^Brocade .* IronWare ').search(sysdescr):
+        return BrocadeIronWare(sysdescr)
+    #
+    # brocade serveriron
+    #
+    elif re.compile(r'^Brocade .* ServerIron ').search(sysdescr):
+        return BrocadeServerIron(sysdescr)
+    #
+    # brocade networkos
+    #
+    elif re.compile(r'^Brocade VDX Switch.$').search(sysdescr):
+        return BrocadeNetworkOS(sysdescr)
     #
     # arista eos
     #

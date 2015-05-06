@@ -232,6 +232,70 @@
     },
 
     {
+        "raw": "Brocade Communications Systems, Inc. FESX624+2XG, IronWare Version 07.3.00cT3e1 Compiled on Apr 25 2012 at 17:01:00 labeled as SXS07300c",
+        "vendor": "brocade",
+        "os": "ironware",
+        "series": "FESX624+2XG",
+        "version": "07.3.00cT3e1"
+    },
+
+    {
+        "raw": "Brocade NetIron CES, IronWare Version V5.2.0cT183 Compiled on Oct 28 2011 at 02:58:44 labeled as V5.2.00c",
+        "vendor": "brocade",
+        "os": "ironware",
+        "series": "CES",
+        "version": "V5.2.0cT183"
+    },
+
+    {
+        "raw": "Brocade NetIron MLX (System Mode: MLX), IronWare Version V5.4.0cT163 Compiled on Mar 25 2013 at 17:08:16 labeled as V5.4.00c",
+        "vendor": "brocade",
+        "os": "ironware",
+        "series": "MLX",
+        "version": "V5.4.0cT163"
+    },
+
+    {
+        "raw": "Brocade Backbone (System Mode: MLX), IronWare Version V5.1.0dT163 Compiled on Aug 19 2011 at 19:00:39 labeled as V5.1.00d",
+        "vendor": "brocade",
+        "os": "ironware",
+        "series": "MLX",
+        "version": "V5.1.0dT163"
+    },
+
+    {
+        "raw": "Brocade MLXe (System Mode: MLX), IronWare Version V5.3.0T163 Compiled on Jan  3 2012 at 18:01:00 labeled as V5.3.00b460",
+        "vendor": "brocade",
+        "os": "ironware",
+        "series": "MLX",
+        "version": "V5.3.0T163"
+    },
+
+    {
+        "raw": "Brocade Communications Systems, Inc. ServerIron ADX 1008-1-PREM, TrafficWork Version 12.4.00T401",
+        "vendor": "brocade",
+        "os": "serveriron",
+        "series": "ADX 1008-1-PREM",
+        "version": "12.4.00T401"
+    },
+
+    {
+        "raw": "Brocade Communications Systems, Inc. ServerIron ADX 4000, TrafficWork Version 12.3.01T403",
+        "vendor": "brocade",
+        "os": "serveriron",
+        "series": "ADX 4000",
+        "version": "12.3.01T403"
+    },
+
+    {
+        "raw": "Brocade VDX Switch.",
+        "vendor": "brocade",
+        "os": "nos",
+        "series": "VDX",
+        "version": "UNKNOWN"
+    },
+
+    {
         "raw": "Arista Networks EOS version 4.12.7.1 running on an Arista Networks DCS-7150S-24",
         "vendor": "arista",
         "os": "eos",
