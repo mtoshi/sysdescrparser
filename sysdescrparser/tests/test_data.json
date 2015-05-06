@@ -24,6 +24,22 @@
     },
 
     {
+        "raw": "Cisco IOS Software, c7600s72033_rp Software (c7600s72033_rp-ADVIPSERVICESK9-M), Version 12.2(33)SRC5, RELEASE SOFTWARE (fc2)",
+        "vendor": "cisco",
+        "os": "ios",
+        "series": "c7600s72033_rp-ADVIPSERVICESK9-M",
+        "version": "12.2(33)SRC5"
+    },
+
+    {
+        "raw": "Cisco IOS Software, Catalyst 4500 L3 Switch Software (cat4500e-ENTSERVICESK9-M), Version 12.2(50)SG3, RELEASE SOFTWARE (fc2)",
+        "vendor": "cisco",
+        "os": "ios",
+        "series": "cat4500e-ENTSERVICESK9-M",
+        "version": "12.2(50)SG3"
+    },
+
+    {
         "raw": "Cisco NX-OS(tm) cgr1000, Software (cgr1000-uk9), Version 5.2(1)CG2(1), Interim version 5.2(1)CG2(0.167), RELEASE SOFTWARE Copyright (c) 2002-2011 by Cisco Systems, Inc. Compiled 1/1/2012 1:00:00",
         "vendor": "cisco",
         "os": "nxos",
@@ -237,6 +253,14 @@
         "os": "eos",
         "series": "DCS-7504",
         "version": "4.14.2F"
+    },
+
+    {
+        "raw": "xxxxxxxxxxxxxxx",
+        "vendor": "UNKNOWN",
+        "os": "UNKNOWN",
+        "series": "UNKNOWN",
+        "version": "UNKNOWN"
     }
 
 ]
