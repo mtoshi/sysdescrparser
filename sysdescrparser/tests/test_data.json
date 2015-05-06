@@ -272,9 +272,25 @@
     },
 
     {
+        "raw": "Brocade Communications Systems, Inc. ServerIron ADX 1008-1-PREM, TrafficWork Version 12.4.00T401",
+        "vendor": "brocade",
+        "os": "serveriron",
+        "series": "ADX 1008-1-PREM",
+        "version": "12.4.00T401"
+    },
+
+    {
+        "raw": "Brocade Communications Systems, Inc. ServerIron ADX 4000, TrafficWork Version 12.3.01T403",
+        "vendor": "brocade",
+        "os": "serveriron",
+        "series": "ADX 4000",
+        "version": "12.3.01T403"
+    },
+
+    {
         "raw": "Brocade VDX Switch.",
         "vendor": "brocade",
-        "os": "UNKNOWN",
+        "os": "nos",
         "series": "VDX",
         "version": "UNKNOWN"
     },
