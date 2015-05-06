@@ -12,6 +12,7 @@ from cisco_ios import CiscoIOS
 from cisco_nxos import CiscoNXOS
 from cisco_iosxr import CiscoIOSXR
 from juniper_junos import JuniperJunos
+from arista_eos import AristaEOS
 from unknown import Unknown
 
 
@@ -30,7 +31,6 @@ def sysdescrparser(sysdescr):
     #
     elif re.compile(r'^Cisco NX-OS').search(sysdescr):
         return CiscoNXOS(sysdescr)
-
     #
     # cisco iosxr
     #
@@ -41,11 +41,11 @@ def sysdescrparser(sysdescr):
     #
     elif re.compile(r'^Juniper Networks').search(sysdescr):
         return JuniperJunos(sysdescr)
-
-    # # arista eos
-    # elif re.compile(r'^Arista Networks EOS').search(sysdescr):
-    #     self.parse_arista_eos()
-
+    #
+    # arista eos
+    #
+    elif re.compile(r'^Arista Networks EOS').search(sysdescr):
+        return AristaEOS(sysdescr)
     #
     # Unknown
     #
