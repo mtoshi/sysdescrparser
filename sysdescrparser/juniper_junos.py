@@ -23,14 +23,16 @@ class JuniperJunos(SysDescr):
         series = self.UNKNOWN
         version = self.UNKNOWN
 
-        regex = (r'Inc. (.*) internet router, kernel JUNOS (.*) #')
+        regex = (r'Juniper\s+Networks,\s+Inc.'
+                 r'\s+(.*)\s+internet\s+router,\s+kernel\s+JUNOS\s+(.*) #')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
             series = res.group(1)
             version = res.group(2)
 
-        regex = (r'Inc. (.*) Edge .* Version : \((.*)\) Build')
+        regex = (r'Juniper\s+Networks,\s+Inc.'
+                 r'\s+(.*)\s+Edge\s+.*\s+Version\s+:\s+\((.*)\)\s+Build')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
