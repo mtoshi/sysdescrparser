@@ -28,6 +28,8 @@ class BrocadeNetworkOS(SysDescr):
         res = pat.search(self.raw)
         if res:
             series = res.group(1)
-            return self._store(vendor, os, series, version)
-
+            return self._store(vendor=vendor,
+                               os=os,
+                               series=series,
+                               version=version)
         return False

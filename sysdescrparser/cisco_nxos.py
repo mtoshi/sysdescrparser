@@ -32,7 +32,10 @@ class CiscoNXOS(SysDescr):
         if res:
             series = res.group(1)
             version = res.group(2)
-            return self._store(vendor, os, series, version)
+            return self._store(vendor=vendor,
+                               os=os,
+                               series=series,
+                               version=version)
 
         regex = (r'Cisco\s+NX-OS.*,\s+'
                  r'Software\s+\((.*)\),'
@@ -42,6 +45,8 @@ class CiscoNXOS(SysDescr):
         if res:
             series = res.group(1)
             version = res.group(2)
-            return self._store(vendor, os, series, version)
-
+            return self._store(vendor=vendor,
+                               os=os,
+                               series=series,
+                               version=version)
         return False
