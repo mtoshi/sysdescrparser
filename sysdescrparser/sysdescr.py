@@ -57,7 +57,6 @@ class SysDescr(object):
         self.os = None
         self.series = None
         self.version = None
-        self.parse()
 
     def _store(self, vendor, os, series, version):
         """Store attributes.

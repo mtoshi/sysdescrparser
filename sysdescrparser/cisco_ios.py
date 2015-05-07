@@ -30,6 +30,7 @@ class CiscoIOS(SysDescr):
         if res:
             series = res.group(1)
             version = res.group(2)
+            return self._store(vendor, os, series, version)
 
         regex = (r'Cisco IOS Software,'
                  r'.* Software \((.*)\), Version (.*), .*RELEASE')
@@ -38,5 +39,6 @@ class CiscoIOS(SysDescr):
         if res:
             series = res.group(1)
             version = res.group(2)
+            return self._store(vendor, os, series, version)
 
-        return self._store(vendor, os, series, version)
+        return False
