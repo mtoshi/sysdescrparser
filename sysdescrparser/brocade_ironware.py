@@ -23,21 +23,24 @@ class BrocadeIronWare(SysDescr):
         series = self.UNKNOWN
         version = self.UNKNOWN
 
-        regex = (r'Systems, Inc. (.*), IronWare Version (.*) Compiled')
+        regex = (r'Brocade Communications Systems, Inc. (.*), '
+                 r'IronWare Version (.*) Compiled')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
             series = res.group(1)
             version = res.group(2)
 
-        regex = (r'NetIron (.*), IronWare Version (.*) Compiled')
+        regex = (r'Brocade NetIron (.*), '
+                 r'IronWare Version (.*) Compiled')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
             series = res.group(1)
             version = res.group(2)
 
-        regex = (r'\(System Mode: (.*)\), IronWare Version (.*) Compiled')
+        regex = (r'Brocade .* \(System Mode: (.*)\), '
+                 r'IronWare Version (.*) Compiled')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
