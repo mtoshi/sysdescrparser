@@ -67,5 +67,4 @@ def sysdescrparser(sysdescr):
     #
     # Unknown
     #
-    else:
-        return Unknown(sysdescr)
+    return Unknown(sysdescr)
