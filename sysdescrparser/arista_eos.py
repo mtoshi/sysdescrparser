@@ -23,11 +23,14 @@ class AristaEOS(SysDescr):
         series = self.UNKNOWN
         version = self.UNKNOWN
 
-        regex = (r'version (.*) running on an Arista Networks (.*)$')
+        regex = (r'Arista\s+Networks\s+EOS\s+'
+                 r'version\s+(.*)\s+'
+                 r'running\s+on\s+an\s+Arista\s+Networks\s+(.*)$')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
             version = res.group(1)
             series = res.group(2)
+            return self._store(vendor, os, series, version)
 
-        return self._store(vendor, os, series, version)
+        return False

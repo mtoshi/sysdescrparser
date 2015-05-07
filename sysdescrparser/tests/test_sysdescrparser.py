@@ -31,6 +31,7 @@ class UnitTests(unittest.TestCase):
         for descr in self.descrs:
 
             obj = sysdescrparser(descr['raw'])
+            obj.parse()
 
             res = ' '.join([
                 obj.vendor,

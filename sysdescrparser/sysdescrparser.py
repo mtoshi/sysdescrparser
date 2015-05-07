@@ -3,7 +3,6 @@
 """sysdescrparser."""
 
 
-import re
 import sys
 import os
 sys.path.append(os.path.dirname(__file__))
@@ -22,50 +21,56 @@ from unknown import Unknown
 def sysdescrparser(sysdescr):
     """Snmp sysDescr parsing."""
     #
-    # cisco ios
-    #
-    if re.compile(r'^Cisco .* Software ..IOS').search(sysdescr):
-        return CiscoIOS(sysdescr)
-
-    elif re.compile(r'^Cisco IOS Soft').search(sysdescr):
-        return CiscoIOS(sysdescr)
-    #
     # cisco nxos
     #
-    elif re.compile(r'^Cisco NX-OS').search(sysdescr):
-        return CiscoNXOS(sysdescr)
+    obj = CiscoNXOS(sysdescr)
+    if obj.parse():
+        return obj
     #
     # cisco iosxr
     #
-    elif re.compile(r'^Cisco IOS XR').search(sysdescr):
-        return CiscoIOSXR(sysdescr)
+    obj = CiscoIOSXR(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # cisco ios
+    #
+    obj = CiscoIOS(sysdescr)
+    if obj.parse():
+        return obj
     #
     # juniper junos
     #
-    elif re.compile(r'^Juniper Networks').search(sysdescr):
-        return JuniperJunos(sysdescr)
+    obj = JuniperJunos(sysdescr)
+    if obj.parse():
+        return obj
     #
     # brocade ironware
     #
-    elif re.compile(r'^Brocade .* IronWare ').search(sysdescr):
-        return BrocadeIronWare(sysdescr)
+    obj = BrocadeIronWare(sysdescr)
+    if obj.parse():
+        return obj
     #
     # brocade serveriron
     #
-    elif re.compile(r'^Brocade .* ServerIron ').search(sysdescr):
-        return BrocadeServerIron(sysdescr)
+    obj = BrocadeServerIron(sysdescr)
+    if obj.parse():
+        return obj
     #
     # brocade networkos
     #
-    elif re.compile(r'^Brocade VDX Switch.$').search(sysdescr):
-        return BrocadeNetworkOS(sysdescr)
+    obj = BrocadeNetworkOS(sysdescr)
+    if obj.parse():
+        return obj
     #
     # arista eos
     #
-    elif re.compile(r'^Arista Networks EOS').search(sysdescr):
-        return AristaEOS(sysdescr)
+    obj = AristaEOS(sysdescr)
+    if obj.parse():
+        return obj
     #
     # Unknown
     #
-    else:
-        return Unknown(sysdescr)
+    obj = Unknown(sysdescr)
+    if obj.parse():
+        return obj

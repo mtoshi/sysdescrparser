@@ -23,18 +23,13 @@ class CiscoIOSXR(SysDescr):
         series = self.UNKNOWN
         version = self.UNKNOWN
 
-        regex = (r'Software \(Cisco (.*)\), Version (.*\[.*\])')
+        regex = (r'Cisco\s+IOS\s+XR\s+'
+                 r'Software\s+\((.*)\),\s+Version\s+(.*\[.*\])')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
             series = res.group(1)
             version = res.group(2)
+            return self._store(vendor, os, series, version)
 
-        regex = (r'Software \(Cisco (.*) Series\), Version (.*\[.*\])')
-        pat = re.compile(regex)
-        res = pat.search(self.raw)
-        if res:
-            series = res.group(1)
-            version = res.group(2)
-
-        return self._store(vendor, os, series, version)
+        return False
