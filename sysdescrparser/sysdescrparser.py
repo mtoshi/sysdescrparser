@@ -22,23 +22,20 @@ from unknown import Unknown
 def sysdescrparser(sysdescr):
     """Snmp sysDescr parsing."""
     #
-    # cisco ios
-    #
-    if re.compile(r'^Cisco .* Software ..IOS').search(sysdescr):
-        return CiscoIOS(sysdescr)
-
-    elif re.compile(r'^Cisco IOS Soft').search(sysdescr):
-        return CiscoIOS(sysdescr)
-    #
     # cisco nxos
     #
-    elif re.compile(r'^Cisco NX-OS').search(sysdescr):
+    if re.compile(r'^Cisco NX-OS').search(sysdescr):
         return CiscoNXOS(sysdescr)
     #
     # cisco iosxr
     #
     elif re.compile(r'^Cisco IOS XR').search(sysdescr):
         return CiscoIOSXR(sysdescr)
+    #
+    # cisco ios
+    #
+    elif re.compile(r'^Cisco .*IOS .*').search(sysdescr):
+        return CiscoIOS(sysdescr)
     #
     # juniper junos
     #
