@@ -58,7 +58,7 @@ class SysDescr(object):
         self.series = None
         self.version = None
 
-    def _store(self, vendor, os, series, version):
+    def _store(self, **kwargs):
         """Store attributes.
 
         Args:
@@ -73,10 +73,10 @@ class SysDescr(object):
             :self: This object itself.
 
         """
-        self.vendor = vendor
-        self.os = os
-        self.series = series
-        self.version = version
+        self.vendor = kwargs['vendor']
+        self.os = kwargs['os']
+        self.series = kwargs['series']
+        self.version = kwargs['version']
         return self
 
     @abstractmethod
@@ -88,7 +88,7 @@ class SysDescr(object):
         Sub class has to implement this method.
 
         """
-        return self._store(self.UNKNOWN,
-                           self.UNKNOWN,
-                           self.UNKNOWN,
-                           self.UNKNOWN)
+        return self._store(vendor=self.UNKNOWN,
+                           os=self.UNKNOWN,
+                           series=self.UNKNOWN,
+                           version=self.UNKNOWN)

@@ -31,6 +31,8 @@ class AristaEOS(SysDescr):
         if res:
             version = res.group(1)
             series = res.group(2)
-            return self._store(vendor, os, series, version)
-
+            return self._store(vendor=vendor,
+                               os=os,
+                               series=series,
+                               version=version)
         return False
