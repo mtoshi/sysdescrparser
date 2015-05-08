@@ -28,8 +28,8 @@ class CitrixNetscaler(SysDescr):
         res = pat.search(self.raw)
         if res:
             version = res.group(1)
-            return self._store(vendor=vendor,
-                               os=os,
-                               model=model,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
         return False

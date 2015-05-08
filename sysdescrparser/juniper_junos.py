@@ -30,10 +30,10 @@ class JuniperJunos(SysDescr):
         if res:
             model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               model=model,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
 
         regex = (r'Juniper\s+Networks,\s+Inc.'
                  r'\s+(.*)\s+Edge\s+.*\s+Version\s+:\s+\((.*)\)\s+Build')
@@ -42,8 +42,8 @@ class JuniperJunos(SysDescr):
         if res:
             model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               model=model,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
         return False

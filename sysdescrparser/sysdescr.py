@@ -58,7 +58,7 @@ class SysDescr(object):
         self.os = None
         self.version = None
 
-    def _store(self, **kwargs):
+    def store(self, **kwargs):
         """Store attributes.
 
         Args:
@@ -88,7 +88,7 @@ class SysDescr(object):
         Sub class has to implement this method.
 
         """
-        return self._store(vendor=self.UNKNOWN,
-                           model=self.UNKNOWN,
-                           os=self.UNKNOWN,
-                           version=self.UNKNOWN)
+        return self.store(vendor=self.UNKNOWN,
+                          model=self.UNKNOWN,
+                          os=self.UNKNOWN,
+                          version=self.UNKNOWN)

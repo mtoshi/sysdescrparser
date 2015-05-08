@@ -30,10 +30,10 @@ class BrocadeIronWare(SysDescr):
         if res:
             model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               model=model,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
 
         regex = (r'Brocade .* \(System Mode: (.*)\), '
                  r'IronWare Version (.*) Compiled')
@@ -42,10 +42,10 @@ class BrocadeIronWare(SysDescr):
         if res:
             model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               model=model,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
 
         regex = (r'Brocade NetIron (.*), '
                  r'IronWare Version (.*) Compiled')
@@ -54,8 +54,8 @@ class BrocadeIronWare(SysDescr):
         if res:
             model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               model=model,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
         return False
