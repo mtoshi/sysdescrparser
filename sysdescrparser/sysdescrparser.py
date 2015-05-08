@@ -11,6 +11,7 @@ from cisco_ios import CiscoIOS
 from cisco_nxos import CiscoNXOS
 from cisco_iosxr import CiscoIOSXR
 from juniper_junos import JuniperJunos
+from juniper_screenos import JuniperScreenOS
 from brocade_ironware import BrocadeIronWare
 from brocade_serveriron import BrocadeServerIron
 from brocade_networkos import BrocadeNetworkOS
@@ -42,6 +43,12 @@ def sysdescrparser(sysdescr):
     # juniper junos
     #
     obj = JuniperJunos(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # juniper screenos
+    #
+    obj = JuniperScreenOS(sysdescr)
     if obj.parse():
         return obj
     #
