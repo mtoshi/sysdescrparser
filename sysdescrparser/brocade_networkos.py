@@ -20,16 +20,16 @@ class BrocadeNetworkOS(SysDescr):
         """Parse."""
         vendor = 'brocade'
         os = 'nos'
-        series = self.UNKNOWN
+        model = self.UNKNOWN
         version = self.UNKNOWN
 
         regex = (r'^Brocade (.*) Switch.$')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            series = res.group(1)
+            model = res.group(1)
             return self._store(vendor=vendor,
                                os=os,
-                               series=series,
+                               model=model,
                                version=version)
         return False

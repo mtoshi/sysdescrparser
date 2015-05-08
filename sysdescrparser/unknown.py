@@ -18,5 +18,5 @@ class Unknown(SysDescr):
         """Parse."""
         return self._store(vendor=self.UNKNOWN,
                            os=self.UNKNOWN,
-                           series=self.UNKNOWN,
+                           model=self.UNKNOWN,
                            version=self.UNKNOWN)

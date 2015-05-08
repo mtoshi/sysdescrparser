@@ -36,12 +36,12 @@ class UnitTests(unittest.TestCase):
             res = ' '.join([
                 obj.vendor,
                 obj.os,
-                obj.series,
+                obj.model,
                 obj.version,
                 ' --- ',
                 descr['vendor'],
                 descr['os'],
-                descr['series'],
+                descr['model'],
                 descr['version'],
                 '\n',
             ])
@@ -50,7 +50,7 @@ class UnitTests(unittest.TestCase):
 
             self.assertEqual(obj.vendor, descr['vendor'])
             self.assertEqual(obj.os, descr['os'])
-            self.assertEqual(obj.series, descr['series'])
+            self.assertEqual(obj.model, descr['model'])
             self.assertEqual(obj.version, descr['version'])
 
 

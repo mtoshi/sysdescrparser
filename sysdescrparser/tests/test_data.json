@@ -3,7 +3,7 @@
         "raw": "Cisco Internetwork Operating System Software ..IOS (tm) C1700 Software (C1700-Y-M), Version 12.2(4)YB, EARLY DEPLOYMENT RELEASE SOFTWARE (fc1)..Synched to technology version 12.2(6.8)T2..TAC Support: http://www.cisco.com/tac..Copyright (c) 1986-2002 by ci",
         "vendor": "cisco",
         "os": "ios",
-        "series": "C1700-Y-M",
+        "model": "C1700-Y-M",
         "version": "12.2(4)YB"
     },
 
@@ -11,7 +11,7 @@
         "raw": "Cisco Internetwork Operating System Software ..IOS (tm) C2600 Software (C2600-I-M), Version 12.0(3)T3,  RELEASE SOFTWARE (fc1)..Copyright (c) 1986-1999 by cisco Systems, Inc...Compiled Thu 15-Apr-99 15:41 by kpma",
         "vendor": "cisco",
         "os": "ios",
-        "series": "C2600-I-M",
+        "model": "C2600-I-M",
         "version": "12.0(3)T3"
     },
 
@@ -19,7 +19,7 @@
         "raw": "Cisco IOS Software, C1700 Software (C1700-ADVSECURITYK9-M), Version 12.3(11)YZ2, RELEASE SOFTWARE (fc2)..Technical Support: http://www.cisco.com/techsupport..Copyright (c) 1986-2007 by Cisco Systems, Inc...Compiled Wed 08-Aug-07 19:22 by dchih",
         "vendor": "cisco",
         "os": "ios",
-        "series": "C1700-ADVSECURITYK9-M",
+        "model": "C1700-ADVSECURITYK9-M",
         "version": "12.3(11)YZ2"
     },
 
@@ -27,7 +27,7 @@
         "raw": "Cisco IOS Software, c7600s72033_rp Software (c7600s72033_rp-ADVIPSERVICESK9-M), Version 12.2(33)SRC5, RELEASE SOFTWARE (fc2)",
         "vendor": "cisco",
         "os": "ios",
-        "series": "c7600s72033_rp-ADVIPSERVICESK9-M",
+        "model": "c7600s72033_rp-ADVIPSERVICESK9-M",
         "version": "12.2(33)SRC5"
     },
 
@@ -35,7 +35,7 @@
         "raw": "Cisco IOS Software, Catalyst 4500 L3 Switch Software (cat4500e-ENTSERVICESK9-M), Version 12.2(50)SG3, RELEASE SOFTWARE (fc2)",
         "vendor": "cisco",
         "os": "ios",
-        "series": "cat4500e-ENTSERVICESK9-M",
+        "model": "cat4500e-ENTSERVICESK9-M",
         "version": "12.2(50)SG3"
     },
 
@@ -43,7 +43,7 @@
         "raw": "Cisco NX-OS(tm) cgr1000, Software (cgr1000-uk9), Version 5.2(1)CG2(1), Interim version 5.2(1)CG2(0.167), RELEASE SOFTWARE Copyright (c) 2002-2011 by Cisco Systems, Inc. Compiled 1/1/2012 1:00:00",
         "vendor": "cisco",
         "os": "nxos",
-        "series": "cgr1000-uk9",
+        "model": "cgr1000-uk9",
         "version": "5.2(1)CG2(1)"
     },
 
@@ -51,7 +51,7 @@
         "raw": "Cisco NX-OS(tm) m9100, Software (m9100-s2ek9-mz), Version 4.1(1c), RELEASE SOFTWARE Copyright (c) 2002-2008 by Cisco Systems, Inc. Compiled 11/24/2008 18:00:00",
         "vendor": "cisco",
         "os": "nxos",
-        "series": "m9100-s2ek9-mz",
+        "model": "m9100-s2ek9-mz",
         "version": "4.1(1c)"
     },
 
@@ -59,7 +59,7 @@
         "raw": "Cisco NX-OS(tm) n3000, Software (n3000-uk9), Version 5.0(3)U1(2), Interim version 5.0(3)U1(1.319), RELEASE SOFTWARE Copyright (c) 2002-2011 by Cisco Systems, Inc. Device Manager Version 5.2(1), Compiled 7/10/2011 6:00:00",
         "vendor": "cisco",
         "os": "nxos",
-        "series": "n3000-uk9",
+        "model": "n3000-uk9",
         "version": "5.0(3)U1(2)"
     },
 
@@ -67,7 +67,7 @@
         "raw": "Cisco NX-OS(tm) n5000, Software (n5000-uk9), Version 4.1(3)N1(1a), RELEASE SOFTWARE Copyright (c) 2002-2008 by Cisco Systems, Inc. Device Manager Version 4.2(1), Compiled 9/17/2009 19:00:00",
         "vendor": "cisco",
         "os": "nxos",
-        "series": "n5000-uk9",
+        "model": "n5000-uk9",
         "version": "4.1(3)N1(1a)"
     },
 
@@ -75,7 +75,7 @@
         "raw": "Cisco IOS XR Software (Cisco ASR9K Series), Version 4.2.3[Default] Copyright (c) 2013 by Cisco Systems, Inc.",
         "vendor": "cisco",
         "os": "iosxr",
-        "series": "Cisco ASR9K Series",
+        "model": "Cisco ASR9K Series",
         "version": "4.2.3[Default]"
     },
 
@@ -83,7 +83,7 @@
         "raw": "Cisco IOS XR Software (Cisco 12816/PRP), Version 4.3.2[Default] Copyright (c) 2014 by Cisco Systems, Inc.",
         "vendor": "cisco",
         "os": "iosxr",
-        "series": "Cisco 12816/PRP",
+        "model": "Cisco 12816/PRP",
         "version": "4.3.2[Default]"
     },
 
@@ -91,7 +91,7 @@
         "raw": "Cisco IOS XR Software (Cisco 12404/PRP), Version 3.6.0[00] Copyright (c) 2007 by Cisco Systems, Inc.",
         "vendor": "cisco",
         "os": "iosxr",
-        "series": "Cisco 12404/PRP",
+        "model": "Cisco 12404/PRP",
         "version": "3.6.0[00]"
     },
 
@@ -99,7 +99,7 @@
         "raw": "Juniper Networks, Inc. ex2200-24t-4g internet router, kernel JUNOS 10.2R1.8 #0: 2010-05-27 20:13:49 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "ex2200-24t-4g",
+        "model": "ex2200-24t-4g",
         "version": "10.2R1.8"
     },
 
@@ -107,7 +107,7 @@
         "raw": "Juniper Networks, Inc. ex2200-48t-4g internet router, kernel JUNOS 10.2R1.8 #0: 2010-05-27 20:13:49 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "ex2200-48t-4g",
+        "model": "ex2200-48t-4g",
         "version": "10.2R1.8"
     },
 
@@ -115,7 +115,7 @@
         "raw": "Juniper Networks, Inc. ex2200-c-12t-2g internet router, kernel JUNOS 11.3R1.7 #0: 2011-08-30 11:49:21 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "ex2200-c-12t-2g",
+        "model": "ex2200-c-12t-2g",
         "version": "11.3R1.7"
     },
 
@@ -123,7 +123,7 @@
         "raw": "Juniper Networks, Inc. ex3200-24p internet router, kernel JUNOS 11.1R3.5 #0: 2011-06-25 01:18:46 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "ex3200-24p",
+        "model": "ex3200-24p",
         "version": "11.1R3.5"
     },
 
@@ -131,7 +131,7 @@
         "raw": "Juniper Networks, Inc. ex4200-24f internet router, kernel JUNOS 10.0S1.1 #0: 2010-01-08 06:28:28 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "ex4200-24f",
+        "model": "ex4200-24f",
         "version": "10.0S1.1"
     },
 
@@ -139,7 +139,7 @@
         "raw": "Juniper Networks, Inc. ex4200-24t internet router, kernel JUNOS 10.2R1.8 #0: 2010-05-27 21:05:57 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "ex4200-24t",
+        "model": "ex4200-24t",
         "version": "10.2R1.8"
     },
 
@@ -147,7 +147,7 @@
         "raw": "Juniper Networks, Inc. ex4500-40f internet router, kernel JUNOS 11.1R3.5 #0: 2011-06-25 01:18:46 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "ex4500-40f",
+        "model": "ex4500-40f",
         "version": "11.1R3.5"
     },
 
@@ -155,7 +155,7 @@
         "raw": "Juniper Networks, Inc. j2300 internet router, kernel JUNOS 8.5-20080528.0 #0: 2008-05-28 06:18:51 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "j2300",
+        "model": "j2300",
         "version": "8.5-20080528.0"
     },
 
@@ -163,7 +163,7 @@
         "raw": "Juniper Networks, Inc. j6300 internet router, kernel JUNOS 8.1R1.5 #0: 2006-11-02 00 Build date: 2006-11-02 00:27:54 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "j6300",
+        "model": "j6300",
         "version": "8.1R1.5"
     },
 
@@ -171,7 +171,7 @@
         "raw": "Juniper Networks, Inc. jsr2320 internet router, kernel JUNOS 9.2R1.10 #0: 2008-08-07 06:45:07 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "jsr2320",
+        "model": "jsr2320",
         "version": "9.2R1.10"
     },
 
@@ -179,7 +179,7 @@
         "raw": "Juniper Networks, Inc. m10 internet router, kernel JUNOS 7.6R3.6 #0: 2006-11-03 04 Build date: 2006-11-03 04:23:40 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "m10",
+        "model": "m10",
         "version": "7.6R3.6"
     },
 
@@ -187,7 +187,7 @@
         "raw": "Juniper Networks, Inc. m20 internet router, kernel JUNOS 6.3R2.2 #0: 2004-08-06 01 Build date: 2004-08-06 01:25:20 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "m20",
+        "model": "m20",
         "version": "6.3R2.2"
     },
 
@@ -195,7 +195,7 @@
         "raw": "Juniper Networks, Inc. m120 internet router, kernel JUNOS 10.0S14 #0: 2011-03-25 07:25:26 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "m120",
+        "model": "m120",
         "version": "10.0S14"
     },
 
@@ -203,7 +203,7 @@
         "raw": "Juniper Networks, Inc. mx480 internet router, kernel JUNOS 11.2R1.10 #0: 2011-07-29 07:15:34 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "mx480",
+        "model": "mx480",
         "version": "11.2R1.10"
     },
 
@@ -211,7 +211,7 @@
         "raw": "Juniper Networks, Inc. srx1400 internet router, kernel JUNOS 10.4R3.4 #0: 2011-03-19 22:06:23 UTC",
         "vendor": "juniper",
         "os": "junos",
-        "series": "srx1400",
+        "model": "srx1400",
         "version": "10.4R3.4"
     },
 
@@ -219,7 +219,7 @@
         "raw": "Juniper Networks, Inc. ERX-700 Edge Routing Switch SW Version : (11.1.0 release-0.0 [BuildId 12065]) Build Date : April 20, 2010 20:41 Copyright",
         "vendor": "juniper",
         "os": "junos",
-        "series": "ERX-700",
+        "model": "ERX-700",
         "version": "11.1.0 release-0.0 [BuildId 12065]"
     },
 
@@ -227,7 +227,7 @@
         "raw": "Juniper Networks, Inc. RX1400 Edge Switch Router SW Version : (10.3.2 patch-0.2 [BuildId 12841]) Build Date : February 3, 2011 16:26 Copyright",
         "vendor": "juniper",
         "os": "junos",
-        "series": "RX1400",
+        "model": "RX1400",
         "version": "10.3.2 patch-0.2 [BuildId 12841]"
     },
 
@@ -235,7 +235,7 @@
         "raw": "SSG5-Serial version 6.1.0r2.0 (SN: 0123456789012345, Firewall+VPN)",
         "vendor": "juniper",
         "os": "screenos",
-        "series": "SSG5-Serial",
+        "model": "SSG5-Serial",
         "version": "6.1.0r2.0"
     },
 
@@ -243,7 +243,7 @@
         "raw": "SSG-140 version 6.2.0r5.0 (SN: JN123456ABCD, Firewall+VPN)",
         "vendor": "juniper",
         "os": "screenos",
-        "series": "SSG-140",
+        "model": "SSG-140",
         "version": "6.2.0r5.0"
     },
 
@@ -251,7 +251,7 @@
         "raw": "SSG-320M version 6.1.0r2.0 (SN: JN123456ABCD, Firewall+VPN)",
         "vendor": "juniper",
         "os": "screenos",
-        "series": "SSG-320M",
+        "model": "SSG-320M",
         "version": "6.1.0r2.0"
     },
 
@@ -259,7 +259,7 @@
         "raw": "SSG-520 version 6.1.0r2.0 (SN: JN123456ABCD, Firewall+VPN)",
         "vendor": "juniper",
         "os": "screenos",
-        "series": "SSG-520",
+        "model": "SSG-520",
         "version": "6.1.0r2.0"
     },
 
@@ -267,7 +267,7 @@
         "raw": "SSG-550 version 6.2.0r5.0 (SN: JN123456ABCD, Firewall+VPN)",
         "vendor": "juniper",
         "os": "screenos",
-        "series": "SSG-550",
+        "model": "SSG-550",
         "version": "6.2.0r5.0"
     },
 
@@ -275,7 +275,7 @@
         "raw": "Brocade Communications Systems, Inc. FESX624+2XG, IronWare Version 07.3.00cT3e1 Compiled on Apr 25 2012 at 17:01:00 labeled as SXS07300c",
         "vendor": "brocade",
         "os": "ironware",
-        "series": "FESX624+2XG",
+        "model": "FESX624+2XG",
         "version": "07.3.00cT3e1"
     },
 
@@ -283,7 +283,7 @@
         "raw": "Brocade NetIron CES, IronWare Version V5.2.0cT183 Compiled on Oct 28 2011 at 02:58:44 labeled as V5.2.00c",
         "vendor": "brocade",
         "os": "ironware",
-        "series": "CES",
+        "model": "CES",
         "version": "V5.2.0cT183"
     },
 
@@ -291,7 +291,7 @@
         "raw": "Brocade NetIron MLX (System Mode: MLX), IronWare Version V5.4.0cT163 Compiled on Mar 25 2013 at 17:08:16 labeled as V5.4.00c",
         "vendor": "brocade",
         "os": "ironware",
-        "series": "MLX",
+        "model": "MLX",
         "version": "V5.4.0cT163"
     },
 
@@ -299,7 +299,7 @@
         "raw": "Brocade Backbone (System Mode: MLX), IronWare Version V5.1.0dT163 Compiled on Aug 19 2011 at 19:00:39 labeled as V5.1.00d",
         "vendor": "brocade",
         "os": "ironware",
-        "series": "MLX",
+        "model": "MLX",
         "version": "V5.1.0dT163"
     },
 
@@ -307,7 +307,7 @@
         "raw": "Brocade MLXe (System Mode: MLX), IronWare Version V5.3.0T163 Compiled on Jan  3 2012 at 18:01:00 labeled as V5.3.00b460",
         "vendor": "brocade",
         "os": "ironware",
-        "series": "MLX",
+        "model": "MLX",
         "version": "V5.3.0T163"
     },
 
@@ -315,7 +315,7 @@
         "raw": "Brocade Communications Systems, Inc. ServerIron ADX 1008-1-PREM, TrafficWork Version 12.4.00T401",
         "vendor": "brocade",
         "os": "serveriron",
-        "series": "ADX 1008-1-PREM",
+        "model": "ADX 1008-1-PREM",
         "version": "12.4.00T401"
     },
 
@@ -323,7 +323,7 @@
         "raw": "Brocade Communications Systems, Inc. ServerIron ADX 4000, TrafficWork Version 12.3.01T403",
         "vendor": "brocade",
         "os": "serveriron",
-        "series": "ADX 4000",
+        "model": "ADX 4000",
         "version": "12.3.01T403"
     },
 
@@ -331,7 +331,7 @@
         "raw": "Brocade VDX Switch.",
         "vendor": "brocade",
         "os": "nos",
-        "series": "VDX",
+        "model": "VDX",
         "version": "UNKNOWN"
     },
 
@@ -339,7 +339,7 @@
         "raw": "Arista Networks EOS version 4.12.7.1 running on an Arista Networks DCS-7150S-24",
         "vendor": "arista",
         "os": "eos",
-        "series": "DCS-7150S-24",
+        "model": "DCS-7150S-24",
         "version": "4.12.7.1"
     },
 
@@ -347,7 +347,7 @@
         "raw": "Arista Networks EOS version 4.6.0 running on an Arista Networks DCS-7124S",
         "vendor": "arista",
         "os": "eos",
-        "series": "DCS-7124S",
+        "model": "DCS-7124S",
         "version": "4.6.0"
     },
 
@@ -355,7 +355,7 @@
         "raw": "Arista Networks EOS version 4.14.2F running on an Arista Networks DCS-7504",
         "vendor": "arista",
         "os": "eos",
-        "series": "DCS-7504",
+        "model": "DCS-7504",
         "version": "4.14.2F"
     },
 
@@ -363,7 +363,7 @@
         "raw": "NetScaler NS9.0: Build 69.5, Date: Jun 12 2009, 06:00:53",
         "vendor": "citrix",
         "os": "netscaler",
-        "series": "UNKNOWN",
+        "model": "UNKNOWN",
         "version": "NS9.0: Build 69.5"
     },
 
@@ -371,7 +371,7 @@
         "raw": "NetScaler NS9.1: Build 97.3.cl, Date: Aug 19 2009, 13:03:59",
         "vendor": "citrix",
         "os": "netscaler",
-        "series": "UNKNOWN",
+        "model": "UNKNOWN",
         "version": "NS9.1: Build 97.3.cl"
     },
 
@@ -379,7 +379,7 @@
         "raw": "xxxxxxxxxxxxxxx",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
-        "series": "UNKNOWN",
+        "model": "UNKNOWN",
         "version": "UNKNOWN"
     }
 

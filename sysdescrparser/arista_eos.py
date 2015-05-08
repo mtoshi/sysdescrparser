@@ -20,7 +20,7 @@ class AristaEOS(SysDescr):
         """Parse."""
         vendor = 'arista'
         os = 'eos'
-        series = self.UNKNOWN
+        model = self.UNKNOWN
         version = self.UNKNOWN
 
         regex = (r'Arista\s+Networks\s+EOS\s+'
@@ -30,9 +30,9 @@ class AristaEOS(SysDescr):
         res = pat.search(self.raw)
         if res:
             version = res.group(1)
-            series = res.group(2)
+            model = res.group(2)
             return self._store(vendor=vendor,
                                os=os,
-                               series=series,
+                               model=model,
                                version=version)
         return False

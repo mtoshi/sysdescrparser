@@ -20,7 +20,7 @@ class JuniperJunos(SysDescr):
         """Parse."""
         vendor = 'juniper'
         os = 'junos'
-        series = self.UNKNOWN
+        model = self.UNKNOWN
         version = self.UNKNOWN
 
         regex = (r'Juniper\s+Networks,\s+Inc.'
@@ -28,11 +28,11 @@ class JuniperJunos(SysDescr):
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            series = res.group(1)
+            model = res.group(1)
             version = res.group(2)
             return self._store(vendor=vendor,
                                os=os,
-                               series=series,
+                               model=model,
                                version=version)
 
         regex = (r'Juniper\s+Networks,\s+Inc.'
@@ -40,10 +40,10 @@ class JuniperJunos(SysDescr):
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            series = res.group(1)
+            model = res.group(1)
             version = res.group(2)
             return self._store(vendor=vendor,
                                os=os,
-                               series=series,
+                               model=model,
                                version=version)
         return False

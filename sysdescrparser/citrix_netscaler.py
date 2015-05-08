@@ -20,7 +20,7 @@ class CitrixNetscaler(SysDescr):
         """Parse."""
         vendor = 'citrix'
         os = 'netscaler'
-        series = self.UNKNOWN
+        model = self.UNKNOWN
         version = self.UNKNOWN
 
         regex = (r'^NetScaler\s+(.*:\s+Build\s+.*),\s+Date:\s+')
@@ -30,6 +30,6 @@ class CitrixNetscaler(SysDescr):
             version = res.group(1)
             return self._store(vendor=vendor,
                                os=os,
-                               series=series,
+                               model=model,
                                version=version)
         return False
