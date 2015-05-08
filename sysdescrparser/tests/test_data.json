@@ -336,6 +336,70 @@
     },
 
     {
+        "raw": "Foundry Networks, Inc. Backbone, IronWare Version 06.6.36T41 Compiled on Jul 20 2001 at 21:38:29 labeled as BIS06636",
+        "vendor": "foundry",
+        "os": "ironware",
+        "model": "Backbone",
+        "version": "06.6.36T41"
+    },
+
+    {
+        "raw": "Foundry Networks, Inc. BigIron 15000 Router, IronWare Version 08.0.01vT53 Compiled on Feb 26 2010 at 20:07:21 labeled as B2P08001v",
+        "vendor": "foundry",
+        "os": "ironware",
+        "model": "BigIron 15000 Router",
+        "version": "08.0.01vT53"
+    },
+
+    {
+        "raw": "Foundry Networks, Inc. BigIron MG8, IronWare Version V2.1.0bT103 Compiled on Apr 23 2005 at 13:32:29 labeled as V2.1.00b",
+        "vendor": "foundry",
+        "os": "ironware",
+        "model": "BigIron MG8",
+        "version": "V2.1.0bT103"
+    },
+
+    {
+        "raw": "Foundry Networks, Inc. BigIron RX, IronWare Version V2.7.2mT143 Compiled on Apr 03 2012 at 19:38:35 labeled as V2.7.02m",
+        "vendor": "foundry",
+        "os": "ironware",
+        "model": "BigIron RX",
+        "version": "V2.7.2mT143"
+    },
+
+    {
+        "raw": "Foundry Networks, Inc. FES9604, IronWare Version 04.0.00Tc1 Compiled on Dec 18 2007 at 11:24:02 labeled as FEL04000",
+        "vendor": "foundry",
+        "os": "ironware",
+        "model": "FES9604",
+        "version": "04.0.00Tc1"
+    },
+
+    {
+        "raw": "Foundry Networks, Inc. FESX424HF-PREM, IronWare Version 04.3.00T3e3 Compiled on Nov 14 2008 at 15:23:55 labeled as SXR04300",
+        "vendor": "foundry",
+        "os": "ironware",
+        "model": "FESX424HF-PREM",
+        "version": "04.3.00T3e3"
+    },
+
+    {
+        "raw": "Foundry Networks, Inc. NetIron 800 Router, IronWare Version 08.0.01vT53 Compiled on Feb 26 2010 at 20:07:21 labeled as B2P08001v",
+        "vendor": "foundry",
+        "os": "ironware",
+        "model": "NetIron 800 Router",
+        "version": "08.0.01vT53"
+    },
+
+    {
+        "raw": "Foundry Networks, Inc. NetIron CES, IronWare Version V3.9.0T183 Compiled on Jul 23 2009 at 14:18:43 labeled as V3.9.00",
+        "vendor": "foundry",
+        "os": "ironware",
+        "model": "NetIron CES",
+        "version": "V3.9.0T183"
+    },
+
+    {
         "raw": "Arista Networks EOS version 4.12.7.1 running on an Arista Networks DCS-7150S-24",
         "vendor": "arista",
         "os": "eos",

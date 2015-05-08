@@ -15,6 +15,7 @@ from juniper_screenos import JuniperScreenOS
 from brocade_ironware import BrocadeIronWare
 from brocade_serveriron import BrocadeServerIron
 from brocade_networkos import BrocadeNetworkOS
+from foundry_ironware import FoundryIronWare
 from arista_eos import AristaEOS
 from citrix_netscaler import CitrixNetscaler
 from unknown import Unknown
@@ -68,6 +69,12 @@ def sysdescrparser(sysdescr):
     # brocade networkos
     #
     obj = BrocadeNetworkOS(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # foundry ironware
+    #
+    obj = FoundryIronWare(sysdescr)
     if obj.parse():
         return obj
     #
