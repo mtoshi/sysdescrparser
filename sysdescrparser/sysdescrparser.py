@@ -17,6 +17,7 @@ from brocade_serveriron import BrocadeServerIron
 from brocade_networkos import BrocadeNetworkOS
 from foundry_ironware import FoundryIronWare
 from arista_eos import AristaEOS
+from hp_procurve import HPProCurve
 from citrix_netscaler import CitrixNetscaler
 from unknown import Unknown
 
@@ -81,6 +82,12 @@ def sysdescrparser(sysdescr):
     # arista eos
     #
     obj = AristaEOS(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # hp procurve
+    #
+    obj = HPProCurve(sysdescr)
     if obj.parse():
         return obj
     #
