@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""sysdescrparser.cisco_ios."""
+"""sysdescrparser.cisco_nxos."""
 
 
 import re
@@ -20,7 +20,7 @@ class CiscoNXOS(SysDescr):
         """Parse."""
         vendor = 'cisco'
         os = 'nxos'
-        series = self.UNKNOWN
+        model = self.UNKNOWN
         version = self.UNKNOWN
 
         regex = (r'Cisco\s+NX-OS.*,\s+'
@@ -30,12 +30,12 @@ class CiscoNXOS(SysDescr):
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            series = res.group(1)
+            model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               series=series,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
 
         regex = (r'Cisco\s+NX-OS.*,\s+'
                  r'Software\s+\((.*)\),'
@@ -43,10 +43,10 @@ class CiscoNXOS(SysDescr):
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            series = res.group(1)
+            model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               series=series,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
         return False

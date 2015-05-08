@@ -20,7 +20,7 @@ class CiscoIOS(SysDescr):
         """Parse."""
         vendor = 'cisco'
         os = 'ios'
-        series = self.UNKNOWN
+        model = self.UNKNOWN
         version = self.UNKNOWN
 
         regex = (r'Cisco Internetwork Operating System Software ..IOS'
@@ -28,23 +28,23 @@ class CiscoIOS(SysDescr):
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            series = res.group(1)
+            model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               series=series,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
 
         regex = (r'Cisco IOS Software,'
                  r'.* Software \((.*)\), Version (.*), .*RELEASE')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            series = res.group(1)
+            model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               series=series,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
 
         return False

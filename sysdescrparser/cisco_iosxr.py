@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""sysdescrparser.cisco_ios."""
+"""sysdescrparser.cisco_iosxr."""
 
 
 import re
@@ -20,7 +20,7 @@ class CiscoIOSXR(SysDescr):
         """Parse."""
         vendor = 'cisco'
         os = 'iosxr'
-        series = self.UNKNOWN
+        model = self.UNKNOWN
         version = self.UNKNOWN
 
         regex = (r'Cisco\s+IOS\s+XR\s+'
@@ -28,10 +28,10 @@ class CiscoIOSXR(SysDescr):
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            series = res.group(1)
+            model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               series=series,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
         return False

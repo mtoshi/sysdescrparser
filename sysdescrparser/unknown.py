@@ -16,7 +16,7 @@ class Unknown(SysDescr):
 
     def parse(self):
         """Parse."""
-        return self._store(vendor=self.UNKNOWN,
-                           os=self.UNKNOWN,
-                           series=self.UNKNOWN,
-                           version=self.UNKNOWN)
+        return self.store(vendor=self.UNKNOWN,
+                          os=self.UNKNOWN,
+                          model=self.UNKNOWN,
+                          version=self.UNKNOWN)

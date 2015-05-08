@@ -20,7 +20,7 @@ class BrocadeIronWare(SysDescr):
         """Parse."""
         vendor = 'brocade'
         os = 'ironware'
-        series = self.UNKNOWN
+        model = self.UNKNOWN
         version = self.UNKNOWN
 
         regex = (r'Brocade Communications Systems, Inc. (.*), '
@@ -28,34 +28,34 @@ class BrocadeIronWare(SysDescr):
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            series = res.group(1)
+            model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               series=series,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
 
         regex = (r'Brocade .* \(System Mode: (.*)\), '
                  r'IronWare Version (.*) Compiled')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            series = res.group(1)
+            model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               series=series,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
 
         regex = (r'Brocade NetIron (.*), '
                  r'IronWare Version (.*) Compiled')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            series = res.group(1)
+            model = res.group(1)
             version = res.group(2)
-            return self._store(vendor=vendor,
-                               os=os,
-                               series=series,
-                               version=version)
+            return self.store(vendor=vendor,
+                              os=os,
+                              model=model,
+                              version=version)
         return False
