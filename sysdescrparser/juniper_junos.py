@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""sysdescrparser.cisco_ios."""
+"""sysdescrparser.juniper_junos."""
 
 
 import re

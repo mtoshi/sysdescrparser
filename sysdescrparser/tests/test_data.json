@@ -232,6 +232,46 @@
     },
 
     {
+        "raw": "SSG5-Serial version 6.1.0r2.0 (SN: 0123456789012345, Firewall+VPN)",
+        "vendor": "juniper",
+        "os": "screenos",
+        "series": "SSG5-Serial",
+        "version": "6.1.0r2.0"
+    },
+
+    {
+        "raw": "SSG-140 version 6.2.0r5.0 (SN: JN123456ABCD, Firewall+VPN)",
+        "vendor": "juniper",
+        "os": "screenos",
+        "series": "SSG-140",
+        "version": "6.2.0r5.0"
+    },
+
+    {
+        "raw": "SSG-320M version 6.1.0r2.0 (SN: JN123456ABCD, Firewall+VPN)",
+        "vendor": "juniper",
+        "os": "screenos",
+        "series": "SSG-320M",
+        "version": "6.1.0r2.0"
+    },
+
+    {
+        "raw": "SSG-520 version 6.1.0r2.0 (SN: JN123456ABCD, Firewall+VPN)",
+        "vendor": "juniper",
+        "os": "screenos",
+        "series": "SSG-520",
+        "version": "6.1.0r2.0"
+    },
+
+    {
+        "raw": "SSG-550 version 6.2.0r5.0 (SN: JN123456ABCD, Firewall+VPN)",
+        "vendor": "juniper",
+        "os": "screenos",
+        "series": "SSG-550",
+        "version": "6.2.0r5.0"
+    },
+
+    {
         "raw": "Brocade Communications Systems, Inc. FESX624+2XG, IronWare Version 07.3.00cT3e1 Compiled on Apr 25 2012 at 17:01:00 labeled as SXS07300c",
         "vendor": "brocade",
         "os": "ironware",
