@@ -360,6 +360,22 @@
     },
 
     {
+        "raw": "NetScaler NS9.0: Build 69.5, Date: Jun 12 2009, 06:00:53",
+        "vendor": "citrix",
+        "os": "netscaler",
+        "series": "UNKNOWN",
+        "version": "NS9.0: Build 69.5"
+    },
+
+    {
+        "raw": "NetScaler NS9.1: Build 97.3.cl, Date: Aug 19 2009, 13:03:59",
+        "vendor": "citrix",
+        "os": "netscaler",
+        "series": "UNKNOWN",
+        "version": "NS9.1: Build 97.3.cl"
+    },
+
+    {
         "raw": "xxxxxxxxxxxxxxx",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",

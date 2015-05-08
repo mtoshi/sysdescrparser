@@ -16,6 +16,7 @@ from brocade_ironware import BrocadeIronWare
 from brocade_serveriron import BrocadeServerIron
 from brocade_networkos import BrocadeNetworkOS
 from arista_eos import AristaEOS
+from citrix_netscaler import CitrixNetscaler
 from unknown import Unknown
 
 
@@ -73,6 +74,12 @@ def sysdescrparser(sysdescr):
     # arista eos
     #
     obj = AristaEOS(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # citrix netscaler
+    #
+    obj = CitrixNetscaler(sysdescr)
     if obj.parse():
         return obj
     #
