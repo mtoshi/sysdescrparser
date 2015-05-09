@@ -18,8 +18,8 @@ class CiscoNXOS(SysDescr):
 
     def parse(self):
         """Parse."""
-        vendor = 'cisco'
-        os = 'nxos'
+        vendor = 'CISCO'
+        os = 'NXOS'
         model = self.UNKNOWN
         version = self.UNKNOWN
 

@@ -18,8 +18,8 @@ class CiscoIOSXR(SysDescr):
 
     def parse(self):
         """Parse."""
-        vendor = 'cisco'
-        os = 'iosxr'
+        vendor = 'CISCO'
+        os = 'IOSXR'
         model = self.UNKNOWN
         version = self.UNKNOWN
 
