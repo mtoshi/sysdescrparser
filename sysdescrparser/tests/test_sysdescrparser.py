@@ -43,23 +43,6 @@ class UnitTests(unittest.TestCase):
 
         self.assertRaises(TypeError, DoesNotHaveParse)
 
-    def test_store(self):
-        """test storing."""
-        descr = 'xxxxx'
-        args = dict(vendor='vendor',
-                    os='os',
-                    model='model',
-                    version='version')
-
-        obj = sysdescrparser(descr)
-        obj.store(**args)
-
-        self.assertEqual(obj.vendor, args['vendor'])
-        self.assertEqual(obj.os, args['os'])
-        self.assertEqual(obj.model, args['model'])
-        self.assertEqual(obj.version, args['version'])
-        self.assertEqual(obj.raw, descr)
-
     def test_parse(self):
         """test parsing."""
         path = os.path.join(self.here, self.result_file)

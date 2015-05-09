@@ -4,11 +4,11 @@
 
 
 import re
-from sysdescr import SysDescr
+from brocade import Brocade
 
 
 # pylint: disable=no-member
-class BrocadeServerIron(SysDescr):
+class BrocadeServerIron(Brocade):
 
     """Class BrocadeServerIron.
 
@@ -16,21 +16,21 @@ class BrocadeServerIron(SysDescr):
 
     """
 
+    def __init__(self, raw):
+        """Constructor."""
+        super(BrocadeServerIron, self).__init__(raw)
+        self.os = 'SERVERIRON'
+        self.model = self.UNKNOWN
+        self.version = self.UNKNOWN
+
     def parse(self):
         """Parse."""
-        vendor = 'BROCADE'
-        os = 'SERVERIRON'
-        model = self.UNKNOWN
-        version = self.UNKNOWN
-
         regex = (r'Systems, Inc. ServerIron (.*), .* Version (.*)$')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            model = res.group(1)
-            version = res.group(2)
-            return self.store(vendor=vendor,
-                              os=os,
-                              model=model,
-                              version=version)
+            self.model = res.group(1)
+            self.version = res.group(2)
+            return self
+
         return False

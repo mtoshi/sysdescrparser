@@ -4,25 +4,27 @@
 
 
 import re
-from sysdescr import SysDescr
+from hp import HP
 
 
 # pylint: disable=no-member
-class HPProCurve(SysDescr):
+class HPProCurve(HP):
 
     """Class HPProCurve.
 
-    SNMP sysDescr for HP ProCurve.
+    SNMP sysDescr for HPProCurve.
 
     """
 
+    def __init__(self, raw):
+        """Constructor."""
+        super(HPProCurve, self).__init__(raw)
+        self.os = 'PROCURVE'
+        self.model = self.UNKNOWN
+        self.version = self.UNKNOWN
+
     def parse(self):
         """Parse."""
-        vendor = 'HP'
-        os = 'PROCURVE'
-        model = self.UNKNOWN
-        version = self.UNKNOWN
-
         pat = re.compile('ProCurve', re.I)
         res = pat.search(self.raw)
         if res:
@@ -30,10 +32,7 @@ class HPProCurve(SysDescr):
             pat = re.compile(regex)
             res = pat.search(self.raw)
             if res:
-                model = res.group(1)
-                version = res.group(2)
-                return self.store(vendor=vendor,
-                                  os=os,
-                                  model=model,
-                                  version=version)
+                self.model = res.group(1)
+                self.version = res.group(2)
+                return self
         return False

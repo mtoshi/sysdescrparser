@@ -4,11 +4,11 @@
 
 
 import re
-from sysdescr import SysDescr
+from brocade import Brocade
 
 
 # pylint: disable=no-member
-class BrocadeIronWare(SysDescr):
+class BrocadeIronWare(Brocade):
 
     """Class BrocadeIronWare.
 
@@ -16,46 +16,40 @@ class BrocadeIronWare(SysDescr):
 
     """
 
+    def __init__(self, raw):
+        """Constructor."""
+        super(BrocadeIronWare, self).__init__(raw)
+        self.os = 'IRONWARE'
+        self.model = self.UNKNOWN
+        self.version = self.UNKNOWN
+
     def parse(self):
         """Parse."""
-        vendor = 'BROCADE'
-        os = 'IRONWARE'
-        model = self.UNKNOWN
-        version = self.UNKNOWN
-
         regex = (r'Brocade Communications Systems, Inc. (.*), '
                  r'IronWare Version (.*) Compiled')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            model = res.group(1)
-            version = res.group(2)
-            return self.store(vendor=vendor,
-                              os=os,
-                              model=model,
-                              version=version)
+            self.model = res.group(1)
+            self.version = res.group(2)
+            return self
 
         regex = (r'Brocade .* \(System Mode: (.*)\), '
                  r'IronWare Version (.*) Compiled')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            model = res.group(1)
-            version = res.group(2)
-            return self.store(vendor=vendor,
-                              os=os,
-                              model=model,
-                              version=version)
+            self.model = res.group(1)
+            self.version = res.group(2)
+            return self
 
         regex = (r'Brocade NetIron (.*), '
                  r'IronWare Version (.*) Compiled')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            model = res.group(1)
-            version = res.group(2)
-            return self.store(vendor=vendor,
-                              os=os,
-                              model=model,
-                              version=version)
+            self.model = res.group(1)
+            self.version = res.group(2)
+            return self
+
         return False

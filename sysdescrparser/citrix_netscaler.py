@@ -4,32 +4,31 @@
 
 
 import re
-from sysdescr import SysDescr
+from citrix import Citrix
 
 
 # pylint: disable=no-member
-class CitrixNetscaler(SysDescr):
+class CitrixNetscaler(Citrix):
 
     """Class CitrixNetscaler.
 
-    SNMP sysDescr for Citrix Netscaler.
+    SNMP sysDescr for CitrixNetscaler.
 
     """
 
+    def __init__(self, raw):
+        """Constructor."""
+        super(CitrixNetscaler, self).__init__(raw)
+        self.os = 'NETSCALER'
+        self.model = self.UNKNOWN
+        self.version = self.UNKNOWN
+
     def parse(self):
         """Parse."""
-        vendor = 'CITRIX'
-        os = 'NETSCALER'
-        model = self.UNKNOWN
-        version = self.UNKNOWN
-
         regex = (r'^NetScaler\s+(.*:\s+Build\s+.*),\s+Date:\s+')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            version = res.group(1)
-            return self.store(vendor=vendor,
-                              os=os,
-                              model=model,
-                              version=version)
+            self.version = res.group(1)
+            return self
         return False
