@@ -18,8 +18,8 @@ class FoundryIronWare(SysDescr):
 
     def parse(self):
         """Parse."""
-        vendor = 'foundry'
-        os = 'ironware'
+        vendor = 'FOUNDRY'
+        os = 'IRONWARE'
         model = self.UNKNOWN
         version = self.UNKNOWN
 

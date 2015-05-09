@@ -18,8 +18,8 @@ class JuniperJunos(SysDescr):
 
     def parse(self):
         """Parse."""
-        vendor = 'juniper'
-        os = 'junos'
+        vendor = 'JUNIPER'
+        os = 'JUNOS'
         model = self.UNKNOWN
         version = self.UNKNOWN
 

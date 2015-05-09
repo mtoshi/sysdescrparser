@@ -18,8 +18,8 @@ class HPProCurve(SysDescr):
 
     def parse(self):
         """Parse."""
-        vendor = 'hp'
-        os = 'procurve'
+        vendor = 'HP'
+        os = 'PROCURVE'
         model = self.UNKNOWN
         version = self.UNKNOWN
 

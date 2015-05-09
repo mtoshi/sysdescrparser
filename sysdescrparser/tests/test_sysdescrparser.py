@@ -21,7 +21,11 @@ class UnitTests(unittest.TestCase):
         """Setup."""
         self.result_file = 'test_result.txt'
         self.here = os.path.dirname(os.path.abspath(__file__))
-        path = os.path.join(self.here, 'test_data.json')
+        path = os.path.join(self.here,
+                            '..',
+                            '..',
+                            'samples',
+                            'sample_data.json')
         self.descrs = json_load(path)
 
     def test_abstract(self):

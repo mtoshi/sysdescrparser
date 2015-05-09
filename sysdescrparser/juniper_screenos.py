@@ -18,8 +18,8 @@ class JuniperScreenOS(SysDescr):
 
     def parse(self):
         """Parse."""
-        vendor = 'juniper'
-        os = 'screenos'
+        vendor = 'JUNIPER'
+        os = 'SCREENOS'
         model = self.UNKNOWN
         version = self.UNKNOWN
 

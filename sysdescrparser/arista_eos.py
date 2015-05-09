@@ -18,8 +18,8 @@ class AristaEOS(SysDescr):
 
     def parse(self):
         """Parse."""
-        vendor = 'arista'
-        os = 'eos'
+        vendor = 'ARISTA'
+        os = 'EOS'
         model = self.UNKNOWN
         version = self.UNKNOWN
 

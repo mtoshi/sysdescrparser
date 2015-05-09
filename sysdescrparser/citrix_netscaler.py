@@ -18,8 +18,8 @@ class CitrixNetscaler(SysDescr):
 
     def parse(self):
         """Parse."""
-        vendor = 'citrix'
-        os = 'netscaler'
+        vendor = 'CITRIX'
+        os = 'NETSCALER'
         model = self.UNKNOWN
         version = self.UNKNOWN
 

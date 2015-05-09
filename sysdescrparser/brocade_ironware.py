@@ -18,8 +18,8 @@ class BrocadeIronWare(SysDescr):
 
     def parse(self):
         """Parse."""
-        vendor = 'brocade'
-        os = 'ironware'
+        vendor = 'BROCADE'
+        os = 'IRONWARE'
         model = self.UNKNOWN
         version = self.UNKNOWN
 

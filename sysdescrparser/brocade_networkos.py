@@ -18,8 +18,8 @@ class BrocadeNetworkOS(SysDescr):
 
     def parse(self):
         """Parse."""
-        vendor = 'brocade'
-        os = 'nos'
+        vendor = 'BROCADE'
+        os = 'NOS'
         model = self.UNKNOWN
         version = self.UNKNOWN
 
