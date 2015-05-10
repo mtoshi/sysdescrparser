@@ -528,6 +528,22 @@
     },
 
     {
+        "raw": "Palo Alto Networks PA-2000 series firewall",
+        "vendor": "PALOALTO",
+        "os": "PANOS",
+        "model": "PA-2000",
+        "version": "UNKNOWN"
+    },
+
+    {
+        "raw": "Palo Alto Networks PA-4000 series firewall",
+        "vendor": "PALOALTO",
+        "os": "PANOS",
+        "model": "PA-4000",
+        "version": "UNKNOWN"
+    },
+
+    {
         "raw": "xxxxxxxxxxxxxxx",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",

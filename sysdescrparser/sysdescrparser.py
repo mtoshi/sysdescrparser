@@ -19,6 +19,7 @@ from foundry_ironware import FoundryIronWare
 from arista_eos import AristaEOS
 from hp_procurve import HPProCurve
 from extreme_xos import ExtremeXOS
+from paloalto_panos import PaloAltoPANOS
 from citrix_netscaler import CitrixNetscaler
 from unknown import Unknown
 
@@ -95,6 +96,12 @@ def sysdescrparser(sysdescr):
     # hp procurve
     #
     obj = HPProCurve(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # paloalto panos
+    #
+    obj = PaloAltoPANOS(sysdescr)
     if obj.parse():
         return obj
     #
