@@ -22,7 +22,7 @@ Requirements
 
 Instration
 -----------
-::
+* PyPI or Github. ::
 
     $ pip install sysdescrpaser
     
@@ -71,7 +71,7 @@ Using example
 
 How to get SNMP sysDescr
 -------------------------
-If you already enabled SNMP daemon, then you can get sysDescr value with below. ::
+* If you already enabled SNMP daemon, then you can get sysDescr value with below. ::
 
     % snmpwalk -Os -v 2c -c your_community_string localhost 1.3.6.1.2.1.1.1
     sysDescr.0 = STRING: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
