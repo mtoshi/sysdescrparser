@@ -21,3 +21,7 @@ class Brocade(SysDescr):
         self.model = self.UNKNOWN
         self.os = self.UNKNOWN
         self.version = self.UNKNOWN
+
+    def parse(self):
+        """Parsing for sysDescr value."""
+        return self
