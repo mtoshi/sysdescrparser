@@ -4,35 +4,34 @@
 
 
 import re
-from sysdescr import SysDescr
+from arista import Arista
 
 
 # pylint: disable=no-member
-class AristaEOS(SysDescr):
+class AristaEOS(Arista):
 
     """Class AristaEOS.
 
-    SNMP sysDescr for Arista EOS.
+    SNMP sysDescr for AristaEOS.
 
     """
 
+    def __init__(self, raw):
+        """Constructor."""
+        super(AristaEOS, self).__init__(raw)
+        self.os = 'EOS'
+        self.model = self.UNKNOWN
+        self.version = self.UNKNOWN
+
     def parse(self):
         """Parse."""
-        vendor = 'ARISTA'
-        os = 'EOS'
-        model = self.UNKNOWN
-        version = self.UNKNOWN
-
         regex = (r'Arista\s+Networks\s+EOS\s+'
                  r'version\s+(.*)\s+'
                  r'running\s+on\s+an\s+Arista\s+Networks\s+(.*)$')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            version = res.group(1)
-            model = res.group(2)
-            return self.store(vendor=vendor,
-                              os=os,
-                              model=model,
-                              version=version)
+            self.version = res.group(1)
+            self.model = res.group(2)
+            return self
         return False

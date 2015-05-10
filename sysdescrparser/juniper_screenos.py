@@ -4,33 +4,32 @@
 
 
 import re
-from sysdescr import SysDescr
+from juniper import Juniper
 
 
 # pylint: disable=no-member
-class JuniperScreenOS(SysDescr):
+class JuniperScreenOS(Juniper):
 
     """Class JuniperScreenOS.
 
-    SNMP sysDescr for Juniper ScreenOS.
+    SNMP sysDescr for JuniperScreenOS.
 
     """
 
+    def __init__(self, raw):
+        """Constructor."""
+        super(JuniperScreenOS, self).__init__(raw)
+        self.os = 'SCREENOS'
+        self.model = self.UNKNOWN
+        self.version = self.UNKNOWN
+
     def parse(self):
         """Parse."""
-        vendor = 'JUNIPER'
-        os = 'SCREENOS'
-        model = self.UNKNOWN
-        version = self.UNKNOWN
-
         regex = (r'^(SSG.*)\s+version\s+(.*)\s+\(SN:.*\)')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            model = res.group(1)
-            version = res.group(2)
-            return self.store(vendor=vendor,
-                              os=os,
-                              model=model,
-                              version=version)
+            self.model = res.group(1)
+            self.version = res.group(2)
+            return self
         return False

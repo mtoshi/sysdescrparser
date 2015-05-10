@@ -14,9 +14,14 @@ class Unknown(SysDescr):
 
     """
 
+    def __init__(self, raw):
+        """Constructor."""
+        super(Unknown, self).__init__(raw)
+        self.vendor = self.UNKNOWN
+        self.model = self.UNKNOWN
+        self.os = self.UNKNOWN
+        self.version = self.UNKNOWN
+
     def parse(self):
         """Parse."""
-        return self.store(vendor=self.UNKNOWN,
-                          os=self.UNKNOWN,
-                          model=self.UNKNOWN,
-                          version=self.UNKNOWN)
+        return self

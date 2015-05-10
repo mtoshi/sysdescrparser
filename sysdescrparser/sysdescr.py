@@ -58,37 +58,10 @@ class SysDescr(object):
         self.os = None
         self.version = None
 
-    def store(self, **kwargs):
-        """Store attributes.
-
-        Args:
-
-            :vendor (str): Vendor name.
-            :model (str): Model name.
-            :os (str): OS name.
-            :version (str): Version information.
-
-        Returns:
-
-            :self: This object itself.
-
-        """
-        self.vendor = kwargs['vendor']
-        self.model = kwargs['model']
-        self.os = kwargs['os']
-        self.version = kwargs['version']
-        return self
-
     @abstractmethod
     def parse(self):
-        """Parsing.
-
-        This method is abstract.
+        """Parsing for sysDescr value.
 
         Sub class has to implement this method.
 
         """
-        return self.store(vendor=self.UNKNOWN,
-                          model=self.UNKNOWN,
-                          os=self.UNKNOWN,
-                          version=self.UNKNOWN)

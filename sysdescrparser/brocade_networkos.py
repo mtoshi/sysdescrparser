@@ -4,32 +4,31 @@
 
 
 import re
-from sysdescr import SysDescr
+from brocade import Brocade
 
 
 # pylint: disable=no-member
-class BrocadeNetworkOS(SysDescr):
+class BrocadeNetworkOS(Brocade):
 
     """Class BrocadeNetworkOS.
 
-    SNMP sysDescr for Brocade NetworkOS.
+    SNMP sysDescr for BrocadeNetworkOS.
 
     """
 
+    def __init__(self, raw):
+        """Constructor."""
+        super(BrocadeNetworkOS, self).__init__(raw)
+        self.os = 'NOS'
+        self.model = self.UNKNOWN
+        self.version = self.UNKNOWN
+
     def parse(self):
         """Parse."""
-        vendor = 'BROCADE'
-        os = 'NOS'
-        model = self.UNKNOWN
-        version = self.UNKNOWN
-
         regex = (r'^Brocade (.*) Switch.$')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            model = res.group(1)
-            return self.store(vendor=vendor,
-                              os=os,
-                              model=model,
-                              version=version)
+            self.model = res.group(1)
+            return self
         return False
