@@ -35,7 +35,7 @@ Instration
 
 Using example
 --------------
-Example for Juniper Junos sysDescr ::
+* Example for Juniper Junos sysDescr ::
 
     >>> from sysdescrparser import sysdescrparser
     >>> sysdescr = sysdescrparser('Juniper Networks, Inc. ex2200-48t-4g internet router, kernel JUNOS 10.2R1.8 #0: 2010-05-27 20:13:49 UTC')
@@ -49,7 +49,7 @@ Example for Juniper Junos sysDescr ::
     '10.2R1.8'
 
 
-Example for Brocade VDX sysDescr ::
+* Example for Brocade VDX sysDescr ::
 
     >>> sysdescr = sysdescrparser('Brocade VDX Switch.')
     >>> sysdescr.vendor
@@ -63,11 +63,11 @@ Example for Brocade VDX sysDescr ::
 
 
 * About each parsing logic.
-  Of course you are able to see this module python code and also see how it works easily from sample data.
-  https://github.com/mtoshi/sysdescrparser/blob/master/samples/sample_data.json
-  It will be able to understand almost.
-  (Sometimes, using hard code. And also using UNKNOWN values.)
-  This sample data is also used directly by code test.
+    Of course you are able to see this module python code and also see how it works easily from sample data.
+    https://github.com/mtoshi/sysdescrparser/blob/master/samples/sample_data.json
+    It will be able to understand almost.
+    (Sometimes, using hard code. And also using UNKNOWN values.)
+    This sample data is also used directly by code test.
 
 How to get SNMP sysDescr
 -------------------------
