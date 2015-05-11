@@ -20,6 +20,7 @@ from arista_eos import AristaEOS
 from hp_procurve import HPProCurve
 from extreme_xos import ExtremeXOS
 from paloalto_panos import PaloAltoPANOS
+from a10_acos import A10ACOS
 from citrix_netscaler import CitrixNetscaler
 from linux import Linux
 from sun_sunos import SunSUNOS
@@ -104,6 +105,12 @@ def sysdescrparser(sysdescr):
     # paloalto panos
     #
     obj = PaloAltoPANOS(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # a10 acos
+    #
+    obj = A10ACOS(sysdescr)
     if obj.parse():
         return obj
     #
