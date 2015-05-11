@@ -22,6 +22,7 @@ from extreme_xos import ExtremeXOS
 from paloalto_panos import PaloAltoPANOS
 from citrix_netscaler import CitrixNetscaler
 from linux import Linux
+from sun_sunos import SunSUNOS
 from unknown import Unknown
 
 
@@ -115,6 +116,12 @@ def sysdescrparser(sysdescr):
     # linux
     #
     obj = Linux(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # sun sunos
+    #
+    obj = SunSUNOS(sysdescr)
     if obj.parse():
         return obj
     #
