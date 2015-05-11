@@ -576,6 +576,30 @@
     },
 
     {
+        "raw": "SunOS 5.10 sun4u sparc SUNW,Sun-Fire-V210, Class 4 Call Manager",
+        "vendor": "SUN",
+        "os": "SUNOS",
+        "model": "Sun-Fire-V210",
+        "version": "5.10"
+    },
+
+    {
+        "raw": "SunOS 5.10 sun4u sparc SUNW,UltraAX-i2, Class 5 Call Manager",
+        "vendor": "SUN",
+        "os": "SUNOS",
+        "model": "UltraAX-i2",
+        "version": "5.10"
+    },
+
+    {
+        "raw": "SunOS 5.8 sun4u sparc SUNW,Ultra-60",
+        "vendor": "SUN",
+        "os": "SUNOS",
+        "model": "Ultra-60",
+        "version": "5.8"
+    },
+
+    {
         "raw": "xxxxxxxxxxxxxxx",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
