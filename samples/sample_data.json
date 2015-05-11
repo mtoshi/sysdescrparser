@@ -544,6 +544,38 @@
     },
 
     {
+        "raw": "Linux HOSTNAME 3.2.0-4-amd64 #1 SMP Debian 3.2.65-1+deb7u1",
+        "vendor": "UNKNOWN",
+        "os": "LINUX",
+        "model": "UNKNOWN",
+        "version": "3.2.0-4-amd64"
+    },
+
+    {
+        "raw": "Linux HOSTNAME 2.6.32-358.6.2.el6.x86_64 #1 SMP Thu May 16 20:59:36 UTC 2013 x86_64",
+        "vendor": "UNKNOWN",
+        "os": "LINUX",
+        "model": "UNKNOWN",
+        "version": "2.6.32-358.6.2.el6.x86_64"
+    },
+
+    {
+        "raw": "Linux HOSTNAME 2.6.21-1.3194.fc7 #1 SMP Wed May 23 22:35:01 EDT 2007 i686",
+        "vendor": "UNKNOWN",
+        "os": "LINUX",
+        "model": "UNKNOWN",
+        "version": "2.6.21-1.3194.fc7"
+    },
+
+    {
+        "raw": "Linux hostname 3.2.0-56-generic-pae #86-Ubuntu SMP Wed Oct 23 17:51:27 UTC 2013 i686",
+        "vendor": "UNKNOWN",
+        "os": "LINUX",
+        "model": "UNKNOWN",
+        "version": "3.2.0-56-generic-pae"
+    },
+
+    {
         "raw": "xxxxxxxxxxxxxxx",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
