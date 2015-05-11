@@ -456,6 +456,30 @@
     },
 
     {
+        "raw": "HP J4813A ProCurve Switch 2524, revision F.05.34, ROM F.02.01  (/sw/code/build/info(s02))",
+        "vendor": "HP",
+        "os": "PROCURVE",
+        "model": "HP J4813A ProCurve Switch 2524",
+        "version": "F.05.34"
+    },
+
+    {
+        "raw": "AX Series Advanced Traffic Manager AX1000, Advanced Core OS (ACOS) version 2.4.3-p6,",
+        "vendor": "A10",
+        "os": "ACOS",
+        "model": "AX1000",
+        "version": "2.4.3-p6"
+    },
+
+    {
+        "raw": "AX Series Advanced Traffic Manager AX1000, Advanced Core OS (ACOS) version 2.2.4-p8,",
+        "vendor": "A10",
+        "os": "ACOS",
+        "model": "AX1000",
+        "version": "2.2.4-p8"
+    },
+
+    {
         "raw": "NetScaler NS9.0: Build 69.5, Date: Jun 12 2009, 06:00:53",
         "vendor": "CITRIX",
         "os": "NETSCALER",
