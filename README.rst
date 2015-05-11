@@ -49,6 +49,19 @@ Using example
     '10.2R1.8'
 
 
+* Example for Cisco CiscoIOS sysDescr ::
+
+    >>> sysdescr = sysdescrparser('Cisco IOS Software, c7600s72033_rp Software (c7600s72033_rp-ADVIPSERVICESK9-M), Version 12.2(33)SRC5, RELEASE SOFTWARE (fc2)')
+    >>> sysdescr.vendor
+    'CISCO'
+    >>> sysdescr.model
+    'c7600s72033_rp-ADVIPSERVICESK9-M'
+    >>> sysdescr.os
+    'IOS'
+    >>> sysdescr.version
+    '12.2(33)SRC5'
+
+
 * Example for Brocade VDX sysDescr ::
 
     >>> sysdescr = sysdescrparser('Brocade VDX Switch.')
