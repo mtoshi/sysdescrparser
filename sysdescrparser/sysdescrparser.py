@@ -21,6 +21,7 @@ from hp_procurve import HPProCurve
 from extreme_xos import ExtremeXOS
 from paloalto_panos import PaloAltoPANOS
 from citrix_netscaler import CitrixNetscaler
+from linux import Linux
 from unknown import Unknown
 
 
@@ -108,6 +109,12 @@ def sysdescrparser(sysdescr):
     # citrix netscaler
     #
     obj = CitrixNetscaler(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # linux
+    #
+    obj = Linux(sysdescr)
     if obj.parse():
         return obj
     #
