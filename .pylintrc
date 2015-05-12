@@ -4,6 +4,7 @@ init-hook='sys.path = ["sysdescrparser"]'
 
 [MESSAGES CONTROL]
 disable=
+    relative-import,
     too-many-branches,
     too-many-return-statements,
     no-name-in-module,
