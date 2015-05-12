@@ -624,6 +624,30 @@
     },
 
     {
+        "raw": "FreeBSD HOSTNAME 10.0-RELEASE-p4 FreeBSD 10.0-RELEASE-p4 #0: Tue Jun 3 13:14:57 UTC 2014 root@amd64-builder.daemonology.net:/usr/obj/usr/src/sys/GENERIC amd64",
+        "vendor": "UNKNOWN",
+        "os": "FREEBSD",
+        "model": "UNKNOWN",
+        "version": "10.0-RELEASE-p4"
+    },
+
+    {
+        "raw": "FreeBSD HOSTNAME 9.2-RELEASE FreeBSD 9.2-RELEASE #0 r255898: Thu Sep 26 22:50:31 UTC 2013 root@bake.isc.freebsd.org:/usr/obj/usr/src/sys/GENERIC amd64",
+        "vendor": "UNKNOWN",
+        "os": "FREEBSD",
+        "model": "UNKNOWN",
+        "version": "9.2-RELEASE"
+    },
+
+    {
+        "raw": "FreeBSD HOSTNAME 8.1-RELEASE-p5 FreeBSD 8.1-RELEASE-p5 #0: Tue Sep 27 16:18:26 UTC 2011     root@i386-builder.daemonology.net:/usr/obj/usr/src/sys/GENERIC i386",
+        "vendor": "UNKNOWN",
+        "os": "FREEBSD",
+        "model": "UNKNOWN",
+        "version": "8.1-RELEASE-p5"
+    },
+
+    {
         "raw": "xxxxxxxxxxxxxxx",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
