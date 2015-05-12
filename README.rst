@@ -13,7 +13,7 @@ This module parses sysDescr value with vendor name, model name, os name and os v
 However, the sysDescr is free format.
 It does not guarantee that these information always exists. Unknown value, assigns the UNKNOWN.
 If you have any need to handle the equipment that this module does not support,
-then please send the sysDescr value to me.
+then please send the sysDescr value to this package author.
 Or, please contact using function of the such as github pull request.
 
 Requirements
@@ -75,15 +75,20 @@ Using example
     'UNKNOWN'
 
 
-* About each parsing logic.
-    Of course you are able to see this module python code and also see how it works easily from sample data.
+Parsing logic and Support Vendor and OS
+----------------------------------------
+* About parsing logic and support of vendor and os.
+    Of course you are able to see this python code and also see how it works easily from sample data.
     https://github.com/mtoshi/sysdescrparser/blob/master/samples/sample_data.json
     It will be able to understand almost.
     (Sometimes, using hard code. And also using UNKNOWN values.)
     This sample data is also used directly by code test.
 
-How to get SNMP sysDescr
--------------------------
+* About uncovered vendor and os.
+    If you have any need to handle the equipment that this module does not support,
+    then please send the sysDescr value to this package author.
+    Or, please contact using function of the such as github pull request.
+
 * If you already enabled SNMP daemon, then you can get sysDescr value with below. ::
 
     % snmpwalk -Os -v 2c -c your_community_string localhost 1.3.6.1.2.1.1.1

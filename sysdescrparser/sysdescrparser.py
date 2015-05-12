@@ -28,7 +28,48 @@ from unknown import Unknown
 
 
 def sysdescrparser(sysdescr):
-    """Snmp sysDescr parsing."""
+    """SNMP sysDescr parsing.
+
+    Args:
+
+        :sysdescr(str): SNMP sysDescr raw string.
+
+    Returns:
+
+        :SysDescr sub-class instance: SysDescr is abstract super class.
+            Each vendor class extends Sysdescr class and following attributes.
+
+            :vendor(str): Vendor name.
+            :model(str): Product Model name.
+            :os(str): OS name.
+            :version(str): OS version name.
+
+    Example:
+
+        .. code-block:: python
+
+            >>> from sysdescrparser import sysdescrparser
+            >>> sysdescr = sysdescrparser('Juniper Networks, Inc. ...')
+            >>> sysdescr.vendor
+            'JUNIPER'
+            >>> sysdescr.model
+            'ex2200-48t-4g'
+            >>> sysdescr.os
+            'JUNOS'
+            >>> sysdescr.version
+            '10.2R1.8'
+
+    Support:
+
+         Currently supported Vendor and OS.
+
+         https://github.com/mtoshi/sysdescrparser/blob/master/samples/sample_data.json
+
+    See also:
+
+         https://github.com/mtoshi/sysdescrparser/blob/master/README.rst
+
+    """
     #
     # cisco nxos
     #
