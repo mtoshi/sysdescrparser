@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to sysdescrparser's documentation!
-===================================
+===========================================
 
 Contents:
 
@@ -14,11 +14,9 @@ Contents:
 .. automodule:: sysdescrparser
    :members:
 
-
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

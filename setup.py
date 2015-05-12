@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
-"""sysdescrparser setup.py"""
+"""sysdescrparser setup.py."""
 
 from setuptools import setup
+from setuptools import find_packages
 from setuptools.command.test import test as TestCommand
 import sys
 import os
@@ -46,6 +47,9 @@ classifiers = [
     "Programming Language :: Python :: 3.4",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: System :: Networking",
+    "Topic :: System :: Networking :: Monitoring",
+    "Topic :: Utilities",
 ]
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -53,22 +57,23 @@ with open(os.path.join(here, 'README.rst')) as _file:
     README = _file.read()
 
 requires = []
-
 with open('requirements.txt', 'w') as _file:
     _file.write('\n'.join(requires))
+
+EXCLUDE_FROM_PACKAGES = ['tests']
 
 setup(
     name="sysdescrparser",
     version="0.1.0",
-    description='sysdescrparser',
+    description='SNMP sysDescr parser.',
     long_description=README,
     author='Toshikatsu Murakoshi',
     author_email='mtoshi.g@gmail.com',
-    url='rewrite here.',
+    url='https://github.com/mtoshi/sysdescrparser',
     license='MIT',
     classifiers=classifiers,
+    packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
     py_modules=['sysdescrparser'],
-    # packages=['sysdescrparser'],
     data_files=[],
     install_requires=requires,
     include_package_data=True,
