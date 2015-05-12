@@ -47,6 +47,9 @@ classifiers = [
     "Programming Language :: Python :: 3.4",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: System :: Networking",
+    "Topic :: System :: Networking :: Monitoring",
+    "Topic :: Utilities",
 ]
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -66,7 +69,7 @@ setup(
     long_description=README,
     author='Toshikatsu Murakoshi',
     author_email='mtoshi.g@gmail.com',
-    url='rewrite here.',
+    url='https://github.com/mtoshi/sysdescrparser',
     license='MIT',
     classifiers=classifiers,
     packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
