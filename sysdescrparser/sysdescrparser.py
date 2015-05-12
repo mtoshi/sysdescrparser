@@ -24,6 +24,7 @@ from a10_acos import A10ACOS
 from citrix_netscaler import CitrixNetscaler
 from linux import Linux
 from sun_sunos import SunSUNOS
+from freebsd import FreeBSD
 from unknown import Unknown
 
 
@@ -170,6 +171,12 @@ def sysdescrparser(sysdescr):
     # sun sunos
     #
     obj = SunSUNOS(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # freebsd
+    #
+    obj = FreeBSD(sysdescr)
     if obj.parse():
         return obj
     #
