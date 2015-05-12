@@ -16,6 +16,14 @@ If you have any need to handle the equipment that this module does not support,
 then please send the sysDescr value to this package author.
 Or, please contact using function of the such as github pull request.
 
+.. image:: https://secure.travis-ci.org/mtoshi/sysdescrparser.svg?branch=master
+   :target: http://travis-ci.org/mtoshi/sysdescrparser
+.. image:: https://coveralls.io/repos/mtoshi/sysdescrparser/badge.svg?branch=coverall
+   :target: https://coveralls.io/r/mtoshi/sysdescrparser?branch=coverall
+.. image:: https://pypip.in/version/sysdescrparser/badge.svg
+   :target: https://pypi.python.org/pypi/sysdescrparser/
+   :alt: Latest Version
+
 Requirements
 -------------
 * Python2.7, 3.3, 3.4, PyPy.
