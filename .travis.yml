@@ -6,8 +6,11 @@ python:
 - 3.4
 
 install:
-- pip install virtualenv tox docutils
+- pip install virtualenv tox docutils coveralls
 
 script:
 - python setup.py test
 - python setup.py check -r
+
+after_success:
+- coveralls
