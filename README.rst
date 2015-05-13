@@ -2,7 +2,8 @@
 sysdescrparser
 ===================================================
 
-Sysdescparser is a SNMP sysDescr(OID: 1.3.6.1.2.1.1.1) parsing module.
+Sysdescparser is a utility tool for network operators.
+This module parses SNMP sysDescr(OID: 1.3.6.1.2.1.1.1).
 
 Recent IP equipments are implemented useful API.
 However connection method is different with each vendor.
