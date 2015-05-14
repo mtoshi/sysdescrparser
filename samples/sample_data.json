@@ -648,6 +648,62 @@
     },
 
     {
+        "raw": "SEIL/B1 ver 3.40 (Folia)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/B1",
+        "version": "3.40"
+    },
+
+    {
+        "raw": "SEIL/neu ver 1.99 (Crest)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/neu",
+        "version": "1.99"
+    },
+
+    {
+        "raw": "SEIL/X1 ver 3.91 (Alcatraz)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/X1",
+        "version": "3.91"
+    },
+
+    {
+        "raw": "SEIL/X1 ver 2.63 (FujiwaraArmBar)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/X1",
+        "version": "2.63"
+    },
+
+    {
+        "raw": "SEIL/X1 ver 4.30 (AvalanchePress)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/X1",
+        "version": "4.30"
+    },
+
+    {
+        "raw": "SEIL/X1 ver 4.61 (RopeBreak17)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/X1",
+        "version": "4.61"
+    },
+
+    {
+        "raw": "SEIL/X1 ver 4.71 (RopeBreak19)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/X1",
+        "version": "4.71"
+    },
+
+    {
         "raw": "xxxxxxxxxxxxxxx",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
