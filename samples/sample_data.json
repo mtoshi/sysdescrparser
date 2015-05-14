@@ -648,6 +648,110 @@
     },
 
     {
+        "raw": "SEIL/B1 ver 3.40 (Folia)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/B1",
+        "version": "3.40"
+    },
+
+    {
+        "raw": "SEIL/X1 ver 3.91 (Alcatraz)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/X1",
+        "version": "3.91"
+    },
+
+    {
+        "raw": "SEIL/X1 ver 2.63 (FujiwaraArmBar)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/X1",
+        "version": "2.63"
+    },
+
+    {
+        "raw": "SEIL/X1 ver 4.30 (AvalanchePress)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/X1",
+        "version": "4.30"
+    },
+
+    {
+        "raw": "SEIL/X1 ver 4.61 (RopeBreak17)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/X1",
+        "version": "4.61"
+    },
+
+    {
+        "raw": "SEIL/X1 ver 4.71 (RopeBreak19)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/X1",
+        "version": "4.71"
+    },
+
+    {
+        "raw": "SEIL/neu 2FE ver 2.33-153 (Anorak)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/neu 2FE",
+        "version": "2.33-153"
+    },
+
+    {
+        "raw": "SEIL/neu 2FE ver 2.44-153 (Taping9)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/neu 2FE",
+        "version": "2.44-153"
+    },
+
+    {
+        "raw": "SEIL/neu 2FE ver 2.29-153 (Taping4)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/neu 2FE",
+        "version": "2.29-153"
+    },
+
+    {
+        "raw": "SEIL/neu 2FE Plus ver 1.53-161 (Ruff)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/neu 2FE Plus",
+        "version": "1.53-161"
+    },
+
+    {
+        "raw": "SEIL/neu 2FE ver 2.32-153 (Expedition)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/neu 2FE",
+        "version": "2.32-153"
+    },
+
+    {
+        "raw": "SEIL/neu 2FE Plus ver 1.93-162 (Fillin10)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/neu 2FE Plus",
+        "version": "1.93-162"
+    },
+
+    {
+        "raw": "SEIL/neu 2FE ver 2.25-153 (Mulde)",
+        "vendor": "IIJ",
+        "os": "SEIL",
+        "model": "SEIL/neu 2FE",
+        "version": "2.25-153"
+    },
+
+    {
         "raw": "xxxxxxxxxxxxxxx",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",

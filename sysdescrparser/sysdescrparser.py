@@ -25,6 +25,7 @@ from citrix_netscaler import CitrixNetscaler
 from linux import Linux
 from sun_sunos import SunSUNOS
 from freebsd import FreeBSD
+from iij_seil import IIJSeil
 from unknown import Unknown
 
 
@@ -177,6 +178,12 @@ def sysdescrparser(sysdescr):
     # freebsd
     #
     obj = FreeBSD(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # iij seil
+    #
+    obj = IIJSeil(sysdescr)
     if obj.parse():
         return obj
     #
