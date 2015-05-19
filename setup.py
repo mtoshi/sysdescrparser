@@ -64,7 +64,7 @@ EXCLUDE_FROM_PACKAGES = ['tests']
 
 setup(
     name="sysdescrparser",
-    version="0.1.3",
+    version="0.1.4",
     description='SNMP sysDescr parser.',
     long_description=README,
     author='Toshikatsu Murakoshi',
