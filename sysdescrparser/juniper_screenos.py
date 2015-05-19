@@ -25,7 +25,7 @@ class JuniperScreenOS(Juniper):
 
     def parse(self):
         """Parse."""
-        regex = (r'^(SSG.*)\s+version\s+(.*)\s+\(SN:.*\)')
+        regex = (r'^(SSG.*|NetScreen.*)\s+version\s+(.*)\s+\(SN:.*\)')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
