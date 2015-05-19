@@ -272,6 +272,30 @@
     },
 
     {
+        "raw": "NetScreen-5GT version 5.0.0r11.1 (SN: 0123456789012345, Firewall+VPN)",
+        "vendor": "JUNIPER",
+        "os": "SCREENOS",
+        "model": "NetScreen-5GT",
+        "version": "5.0.0r11.1"
+    },
+
+    {
+        "raw": "NetScreen-208 version 5.3.0r3.0 (SN: 0123456789012345, Firewall+VPN)",
+        "vendor": "JUNIPER",
+        "os": "SCREENOS",
+        "model": "NetScreen-208",
+        "version": "5.3.0r3.0"
+    },
+
+    {
+        "raw": "NetScreen-ISG 2000 version 6.3.0r10.0 (SN: 0123456789012345, Firewall+VPN)",
+        "vendor": "JUNIPER",
+        "os": "SCREENOS",
+        "model": "NetScreen-ISG 2000",
+        "version": "6.3.0r10.0"
+    },
+
+    {
         "raw": "Brocade Communications Systems, Inc. FESX624+2XG, IronWare Version 07.3.00cT3e1 Compiled on Apr 25 2012 at 17:01:00 labeled as SXS07300c",
         "vendor": "BROCADE",
         "os": "IRONWARE",
