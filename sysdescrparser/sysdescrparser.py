@@ -26,6 +26,7 @@ from linux import Linux
 from sun_sunos import SunSUNOS
 from freebsd import FreeBSD
 from iij_seil import IIJSeil
+from yamaha_rtx import YamahaRTX
 from unknown import Unknown
 
 
@@ -184,6 +185,12 @@ def sysdescrparser(sysdescr):
     # iij seil
     #
     obj = IIJSeil(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # yamaha rtx
+    #
+    obj = YamahaRTX(sysdescr)
     if obj.parse():
         return obj
     #

@@ -752,6 +752,22 @@
     },
 
     {
+        "raw": "RTX810 Rev.11.01.21 (Mon Jun 30 15:21:35 2014)",
+        "vendor": "YAMAHA",
+        "os": "RTX",
+        "model": "RTX810",
+        "version": "Rev.11.01.21"
+    },
+
+    {
+        "raw": "RTX1100 Rev.8.03.92 (Thu Feb 16 20:50:25 2012)",
+        "vendor": "YAMAHA",
+        "os": "RTX",
+        "model": "RTX1100",
+        "version": "Rev.8.03.92"
+    },
+
+    {
         "raw": "xxxxxxxxxxxxxxx",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
