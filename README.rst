@@ -21,7 +21,7 @@ Or, please contact using function of the such as github pull request.
    :target: http://travis-ci.org/mtoshi/sysdescrparser
 .. image:: https://coveralls.io/repos/mtoshi/sysdescrparser/badge.svg?branch=master
    :target: https://coveralls.io/r/mtoshi/sysdescrparser?branch=master
-.. image:: https://pypip.in/version/sysdescrparser/badge.svg
+.. image:: https://img.shields.io/pypi/v/sysdescrparser.svg
    :target: https://pypi.python.org/pypi/sysdescrparser/
    :alt: Latest Version
 
