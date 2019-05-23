@@ -19,6 +19,7 @@ def metaclass(mcls):
     return decorator
 
 
+# pylint: disable=R0205
 @metaclass(ABCMeta)
 class SysDescr(object):
 
