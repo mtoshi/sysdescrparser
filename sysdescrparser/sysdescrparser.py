@@ -7,6 +7,7 @@ import sys
 import os
 sys.path.append(os.path.dirname(__file__))
 
+# pylint: disable=C0413
 from cisco_ios import CiscoIOS
 from cisco_nxos import CiscoNXOS
 from cisco_iosxr import CiscoIOSXR
