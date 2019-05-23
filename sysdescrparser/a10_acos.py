@@ -25,7 +25,9 @@ class A10ACOS(A10):
 
     def parse(self):
         """Parse."""
-        regex = (r'^(?:AX\s+Series\s+Advanced\s+Traffic\s+Manager|Thunder\s+Series\s+Unified\s+Application\s+Service\s+Gateway)\s+(.*),(?:\s+|)'
+        regex = (r'^(?:AX\s+Series\s+Advanced\s+Traffic'
+                 r'\s+Manager|Thunder\s+Series\s+Unified'
+                 r'\s+Application\s+Service\s+Gateway)\s+(.*),(?:\s+|)'
                  r'.*\s+(?:version|ACOS)\s+(.*),')
         pat = re.compile(regex)
         res = pat.search(self.raw)
