@@ -199,3 +199,5 @@ def sysdescrparser(sysdescr):
     obj = Unknown(sysdescr)
     if obj.parse():
         return obj
+
+    return None
