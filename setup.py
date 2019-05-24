@@ -44,7 +44,9 @@ classifiers = [
     "Programming Language :: Python :: 2.7",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.3",
-    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
     "Topic :: System :: Networking",
@@ -64,7 +66,7 @@ EXCLUDE_FROM_PACKAGES = ['tests']
 
 setup(
     name="sysdescrparser",
-    version="0.1.5",
+    version="0.1.6",
     description='SNMP sysDescr parser.',
     long_description=README,
     author='Toshikatsu Murakoshi',

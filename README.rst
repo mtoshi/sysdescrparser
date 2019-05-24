@@ -27,7 +27,7 @@ Or, please contact using function of the such as github pull request.
 
 Requirements
 -------------
-* Python2.7, 3.3, 3.4, PyPy.
+* Python2.7, 3.5, 3.6, 3.7, PyPy.
 
 Instration
 -----------
@@ -105,6 +105,4 @@ Parsing logic and Support Vendor and OS
 
     % snmpget -Os -v 2c -c your_community_string localhost 1.3.6.1.2.1.1.1.0
     sysDescr.0 = STRING: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-
 
