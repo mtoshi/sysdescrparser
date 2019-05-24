@@ -27,7 +27,7 @@ class AristaEOS(Arista):
         """Parse."""
         regex = (r'Arista\s+Networks\s+EOS\s+'
                  r'version\s+(.*)\s+'
-                 r'running\s+on\s+an\s+Arista\s+Networks\s+(.*)$')
+                 r'running\s+on\s+(?:an\s+Arista\s+Networks|a)\s+(.*)$')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:

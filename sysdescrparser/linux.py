@@ -2,8 +2,8 @@
 
 """sysdescrparser.linux."""
 
-from sysdescr import SysDescr
 import re
+from sysdescr import SysDescr
 
 
 # pylint: disable=no-name-in-module

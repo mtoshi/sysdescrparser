@@ -21,13 +21,13 @@ Or, please contact using function of the such as github pull request.
    :target: http://travis-ci.org/mtoshi/sysdescrparser
 .. image:: https://coveralls.io/repos/mtoshi/sysdescrparser/badge.svg?branch=master
    :target: https://coveralls.io/r/mtoshi/sysdescrparser?branch=master
-.. image:: https://pypip.in/version/sysdescrparser/badge.svg
+.. image:: https://img.shields.io/pypi/v/sysdescrparser.svg
    :target: https://pypi.python.org/pypi/sysdescrparser/
    :alt: Latest Version
 
 Requirements
 -------------
-* Python2.7, 3.3, 3.4, PyPy.
+* Python2.7, 3.5, 3.6, 3.7, PyPy.
 
 Instration
 -----------
@@ -105,6 +105,4 @@ Parsing logic and Support Vendor and OS
 
     % snmpget -Os -v 2c -c your_community_string localhost 1.3.6.1.2.1.1.1.0
     sysDescr.0 = STRING: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-
 

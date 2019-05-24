@@ -26,7 +26,8 @@ class JuniperJunos(Juniper):
     def parse(self):
         """Parse."""
         regex = (r'Juniper\s+Networks,\s+Inc.'
-                 r'\s+(.*)\s+internet\s+router,\s+kernel\s+JUNOS\s+(.*) #')
+                 r'\s+(.*)\s+(?:internet\s+router|Ethernet\sSwitch),'
+                 r'\s+kernel\s+JUNOS\s+([A-Z0-9-.]*)(?:\s#|,\s)')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:

@@ -39,7 +39,6 @@ class UnitTests(unittest.TestCase):
 
             def aaaa(self):
                 """Not parse method."""
-                pass
 
         self.assertRaises(TypeError, DoesNotHaveParse)
 
