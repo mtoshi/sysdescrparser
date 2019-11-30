@@ -10,6 +10,7 @@ sys.path.append(os.path.dirname(__file__))
 # pylint: disable=C0413
 from cisco_ios import CiscoIOS
 from cisco_nxos import CiscoNXOS
+from cisco_iosxe import CiscoIOSXE
 from cisco_iosxr import CiscoIOSXR
 from juniper_junos import JuniperJunos
 from juniper_screenos import JuniperScreenOS
@@ -78,6 +79,12 @@ def sysdescrparser(sysdescr):
     # cisco nxos
     #
     obj = CiscoNXOS(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # cisco iosxe
+    #
+    obj = CiscoIOSXE(sysdescr)
     if obj.parse():
         return obj
     #
