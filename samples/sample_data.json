@@ -40,6 +40,46 @@
     },
 
     {
+        "raw": "Cisco IOS Software [Everest], Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M), Experimental Version 16.4.20170410:165034 [v164_throttle-BLD-BLD_V164_THROTTLE_LATEST_20170410_174845 105]",
+        "vendor": "CISCO",
+        "os": "IOSXE",
+        "model": "CAT3K_CAA-UNIVERSALK9-M",
+        "version": "16.4.20170410:165034"
+    },
+
+    {
+        "raw": "Cisco IOS XE Software, Version 16.06.05 Cisco IOS Software [Everest], ISR Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.6.5, RELEASE SOFTWARE (fc3)",
+        "vendor": "CISCO",
+        "os": "IOSXE",
+        "model": "X86_64_LINUX_IOSD-UNIVERSALK9-M",
+        "version": "16.06.05"
+    },
+
+    {
+        "raw": "Cisco IOS Software, IOS-XE Software, Catalyst 4500 L3 Switch Software (cat4500e-UNIVERSALK9-M), Version 03.03.02.SG RELEASE SOFTWARE (fc1)",
+        "vendor": "CISCO",
+        "os": "IOSXE",
+        "model": "cat4500e-UNIVERSALK9-M",
+        "version": "03.03.02.SG"
+    },
+
+    {
+        "raw": "Cisco IOS Software [Denali], Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M), Version 16.3.1a, RELEASE SOFTWARE (fc4)",
+        "vendor": "CISCO",
+        "os": "IOSXE",
+        "model": "CAT3K_CAA-UNIVERSALK9-M",
+        "version": "16.3.1a"
+    },
+
+    {
+        "raw": "Cisco IOS Software [Fuji], ASR1000 Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.7.1prd4, RELEASE SOFTWARE (fc1)",
+        "vendor": "CISCO",
+        "os": "IOSXE",
+        "model": "X86_64_LINUX_IOSD-UNIVERSALK9-M",
+        "version": "16.7.1prd4"
+    },
+
+    {
         "raw": "Cisco NX-OS(tm) cgr1000, Software (cgr1000-uk9), Version 5.2(1)CG2(1), Interim version 5.2(1)CG2(0.167), RELEASE SOFTWARE Copyright (c) 2002-2011 by Cisco Systems, Inc. Compiled 1/1/2012 1:00:00",
         "vendor": "CISCO",
         "os": "NXOS",
