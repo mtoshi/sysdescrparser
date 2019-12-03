@@ -641,10 +641,10 @@
 
     {
         "raw": "Linux HOSTNAME 2.6.32-358.6.2.el6.x86_64 #1 SMP Thu May 16 20:59:36 UTC 2013 x86_64",
-        "vendor": "UNKNOWN",
-        "os": "LINUX",
-        "model": "UNKNOWN",
-        "version": "2.6.32-358.6.2.el6.x86_64"
+        "vendor": "CENTOS",
+        "os": "CENTOS",
+        "model": "2.6.32-358.6.2.el6.x86_64",
+        "version": "6.0"
     },
 
     {
@@ -657,8 +657,8 @@
 
     {
         "raw": "Linux hostname 3.2.0-56-generic-pae #86-Ubuntu SMP Wed Oct 23 17:51:27 UTC 2013 i686",
-        "vendor": "UNKNOWN",
-        "os": "LINUX",
+        "vendor": "CANONICAL",
+        "os": "UBUNTU",
         "model": "UNKNOWN",
         "version": "3.2.0-56-generic-pae"
     },
