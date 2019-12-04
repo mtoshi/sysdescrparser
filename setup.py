@@ -65,17 +65,17 @@ with open('requirements.txt', 'w') as _file:
 EXCLUDE_FROM_PACKAGES = ['tests']
 
 setup(
-    name="sysdescrparser",
-    version="0.1.6",
+    name="snmpsysdescrparser",
+    version="0.1.9",
     description='SNMP sysDescr parser.',
     long_description=README,
-    author='Toshikatsu Murakoshi',
-    author_email='mtoshi.g@gmail.com',
-    url='https://github.com/mtoshi/sysdescrparser',
+    author='Yazdan',
+    author_email='yzdannn@gmail.com',
+    url='https://github.com/yzdann/sysdescrparser',
     license='MIT',
     classifiers=classifiers,
     packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
-    py_modules=['sysdescrparser'],
+    py_modules=['snmpsysdescrparser'],
     data_files=[],
     install_requires=requires,
     include_package_data=True,
