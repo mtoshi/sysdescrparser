@@ -659,8 +659,8 @@
         "raw": "Linux hostname 3.2.0-56-generic-pae #86-Ubuntu SMP Wed Oct 23 17:51:27 UTC 2013 i686",
         "vendor": "CANONICAL",
         "os": "UBUNTU",
-        "model": "UNKNOWN",
-        "version": "3.2.0-56-generic-pae"
+        "model": "3.2.0-56-generic-pae",
+        "version": "UNKNOWN"
     },
 
     {
