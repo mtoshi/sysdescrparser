@@ -18,7 +18,7 @@ class Linux(SysDescr):
     """
 
     versions = {
-        "ubuntu": {
+        "ubuntu_linux": {
             "lucid": "10.04",
             "precise": "12.04",
             "trusty": "14.04",
@@ -57,7 +57,7 @@ class Linux(SysDescr):
             if len(res) > 2:
                 kernel_version = res[2]
 
-            ubuntu_version_names_regex = os_version_names_regex(self.__class__.versions["ubuntu"])
+            ubuntu_version_names_regex = os_version_names_regex(self.__class__.versions["ubuntu_linux"])
             ubuntu_lts_match = re.search(
                             ubuntu_version_names_regex,
                             self.raw,
