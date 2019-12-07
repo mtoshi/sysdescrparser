@@ -37,9 +37,9 @@ class Linux(SysDescr):
     def __init__(self, raw):
         """Constructor."""
         super(Linux, self).__init__(raw)
-        self.vendor = self.UNKNOWN
+        self.vendor = 'LINUX'
         self.model = self.UNKNOWN
-        self.os = 'LINUX'
+        self.os = 'LINUX_KERNEL'
         self.version = self.UNKNOWN
 
     def parse(self):
@@ -78,7 +78,7 @@ class Linux(SysDescr):
 
             if ubuntu_lts_match or ubuntu_main_version_name_match:
                 self.vendor = "CANONICAL"
-                self.os = "UBUNTU"
+                self.os = "UBUNTU_LINUX"
 
                 if not ubuntu_lts_match:
                     version_name = self.UNKNOWN
