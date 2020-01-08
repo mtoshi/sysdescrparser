@@ -102,7 +102,7 @@ def sysdescrparser(sysdescr):
         return obj
     #
     # mikrotik routeros
-    obj = MikroTikRouterOs(sysdescr)
+    obj = MikroTikRouterOS(sysdescr)
     if obj.parse():
         return obj
     #
