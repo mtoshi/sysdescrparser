@@ -12,6 +12,7 @@ from cisco_ios import CiscoIOS
 from cisco_nxos import CiscoNXOS
 from cisco_iosxe import CiscoIOSXE
 from cisco_iosxr import CiscoIOSXR
+from mikrotik_routeros import MikroTikRouterOS
 from juniper_junos import JuniperJunos
 from juniper_screenos import JuniperScreenOS
 from brocade_ironware import BrocadeIronWare
@@ -97,6 +98,11 @@ def sysdescrparser(sysdescr):
     # cisco ios
     #
     obj = CiscoIOS(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # mikrotik routeros
+    obj = MikroTikRouterOs(sysdescr)
     if obj.parse():
         return obj
     #
