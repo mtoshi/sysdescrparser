@@ -136,6 +136,22 @@
     },
 
     {
+        "raw": "RouterOS 6.43.4 (stable) on RB750",
+        "vendor": "MikroTik",
+        "os": "RouterOS",
+        "model": "RB750",
+        "version": "6.43.4"
+    },
+
+    {
+        "raw": "RouterOS 6.43.4 (stable) on RB951-2n",
+        "vendor": "MikroTik",
+        "os": "RouterOS",
+        "model": "RB951-2n",
+        "version": "6.43.4"
+    },
+
+    {
         "raw": "Juniper Networks, Inc. ex2200-24t-4g internet router, kernel JUNOS 10.2R1.8 #0: 2010-05-27 20:13:49 UTC",
         "vendor": "JUNIPER",
         "os": "JUNOS",
