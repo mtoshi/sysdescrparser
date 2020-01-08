@@ -152,6 +152,14 @@
     },
 
     {
+        "raw": "RouterOS 6.47 (stable) on CCR1036-12G-4S",
+        "vendor": "MikroTik",
+        "os": "RouterOS",
+        "model": "CCR1036-12G-4S",
+        "version": "6.47"
+    },
+
+    {
         "raw": "Juniper Networks, Inc. ex2200-24t-4g internet router, kernel JUNOS 10.2R1.8 #0: 2010-05-27 20:13:49 UTC",
         "vendor": "JUNIPER",
         "os": "JUNOS",
