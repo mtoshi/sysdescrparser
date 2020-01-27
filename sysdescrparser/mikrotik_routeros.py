@@ -25,7 +25,7 @@ class MikroTikRouterOS(SysDescr):
 
     def parse(self):
         """Parse."""
-        regex = r"RouterOS\s+([\d.]+)\s+\((\w+)\)\s+on\s+([\w\-\+]+)"
+        regex = r"RouterOS\s+([\d.]+)\s+\(([\w|-]+)\)\s+on\s+([\w\-\+]+)"
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
