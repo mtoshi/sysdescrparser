@@ -17,7 +17,7 @@ class CiscoASA(Cisco):
     def __init__(self, raw):
         """Constructor."""
         super(CiscoASA, self).__init__(raw)
-        self.os = 'ASA'
+        self.os = 'Adaptive_Security_Appliance'
         self.model = self.UNKNOWN
         self.version = self.UNKNOWN
 
