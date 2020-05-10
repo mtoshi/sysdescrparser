@@ -8,6 +8,7 @@ import os
 sys.path.append(os.path.dirname(__file__))
 
 # pylint: disable=C0413
+from cisco_asa import CiscoASA
 from cisco_ios import CiscoIOS
 from cisco_nxos import CiscoNXOS
 from cisco_iosxe import CiscoIOSXE
@@ -76,6 +77,12 @@ def sysdescrparser(sysdescr):
          https://github.com/mtoshi/sysdescrparser/blob/master/README.rst
 
     """
+    #
+    # cisco asa
+    #
+    obj = CiscoASA(sysdescr)
+    if obj.parse():
+        return obj
     #
     # cisco nxos
     #
