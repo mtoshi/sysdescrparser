@@ -23,7 +23,6 @@ class CiscoASA(Cisco):
 
     def parse(self):
         """Parse."""
-        # Cisco Adaptive Security Appliance Version 8.4(7)31
         regex = (r'Cisco Adaptive Security Appliance '
                  r'Version (\d.*)')
         pat = re.compile(regex)
