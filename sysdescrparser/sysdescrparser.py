@@ -31,6 +31,7 @@ from sun_sunos import SunSUNOS
 from freebsd import FreeBSD
 from iij_seil import IIJSeil
 from yamaha_rtx import YamahaRTX
+from fortinet_fortios import FortiOs
 from unknown import Unknown
 
 
@@ -212,6 +213,12 @@ def sysdescrparser(sysdescr):
     # yamaha rtx
     #
     obj = YamahaRTX(sysdescr)
+    if obj.parse():
+        return obj
+    #
+    # fortigate
+    #
+    obj = FortiOs(sysdescr)
     if obj.parse():
         return obj
     #
