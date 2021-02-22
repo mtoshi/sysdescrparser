@@ -888,6 +888,30 @@
     },
 
     {
+        "raw": "ArubaOS (MODEL: 515), Version 8.6.0.4-8.6.0.4",
+        "vendor": "ARUBA",
+        "os": "ArubaOS",
+        "model": "515",
+        "version": "8.6.0.4-8.6.0.4"
+    },
+
+    {
+        "raw": "ArubaOS (MODEL: Aruba7010), Version 8.3.0.0 (64659)",
+        "vendor": "ARUBA",
+        "os": "ArubaOS",
+        "model": "7010",
+        "version": "8.3.0.0 (64659)"
+    },
+
+    {
+        "raw": "ArubaOS (MODEL: Aruba7210), Version 6.5.1.6 (60228)",
+        "vendor": "ARUBA",
+        "os": "ArubaOS",
+        "model": "7210",
+        "version": "6.5.1.6 (60228)"
+    },
+
+    {
         "raw": "xxxxxxxxxxxxxxx",
         "vendor": "UNKNOWN",
         "os": "UNKNOWN",
