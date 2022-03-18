@@ -4,7 +4,7 @@
 
 
 import re
-from brocade import Brocade
+from sysdescrparser.brocade import Brocade
 
 
 # pylint: disable=no-member

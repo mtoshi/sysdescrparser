@@ -4,7 +4,7 @@
 
 
 import re
-from sun import Sun
+from sysdescrparser.sun import Sun
 
 
 # pylint: disable=no-member

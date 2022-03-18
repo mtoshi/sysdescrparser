@@ -3,7 +3,7 @@
 """sysdescrparser.unknown."""
 
 
-from sysdescr import SysDescr
+from sysdescrparser.sysdescr import SysDescr
 
 
 class Unknown(SysDescr):

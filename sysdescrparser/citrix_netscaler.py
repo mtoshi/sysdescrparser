@@ -4,7 +4,7 @@
 
 
 import re
-from citrix import Citrix
+from sysdescrparser.citrix import Citrix
 
 
 # pylint: disable=no-member

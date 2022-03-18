@@ -3,7 +3,7 @@
 """sysdescrparser.cisco_iosxe."""
 
 import re
-from cisco import Cisco
+from sysdescrparser.cisco import Cisco
 
 
 # pylint: disable=no-member

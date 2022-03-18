@@ -3,8 +3,8 @@
 """sysdescrparser.linux."""
 
 import re
-from sysdescr import SysDescr
-from utils.utils import os_version_names_regex, extract_version_number
+from sysdescrparser.sysdescr import SysDescr
+from sysdescrparser.utils import os_version_names_regex, extract_version_number
 
 
 # pylint: disable=no-name-in-module

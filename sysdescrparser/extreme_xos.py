@@ -4,7 +4,7 @@
 
 
 import re
-from extreme import Extreme
+from sysdescrparser.extreme import Extreme
 
 
 # pylint: disable=no-member

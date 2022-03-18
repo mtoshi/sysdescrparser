@@ -3,37 +3,37 @@
 """sysdescrparser."""
 
 
-import sys
-import os
-sys.path.append(os.path.dirname(__file__))
+# Why this?
+# import sys
+# import os
+# sys.path.append(os.path.dirname(__file__))
 
-# pylint: disable=C0413
-from aruba import Aruba
-from cisco_asa import CiscoASA
-from cisco_ios import CiscoIOS
-from cisco_nxos import CiscoNXOS
-from cisco_iosxe import CiscoIOSXE
-from cisco_iosxr import CiscoIOSXR
-from mikrotik_routeros import MikroTikRouterOS
-from juniper_junos import JuniperJunos
-from juniper_screenos import JuniperScreenOS
-from brocade_ironware import BrocadeIronWare
-from brocade_serveriron import BrocadeServerIron
-from brocade_networkos import BrocadeNetworkOS
-from foundry_ironware import FoundryIronWare
-from arista_eos import AristaEOS
-from hp_procurve import HPProCurve
-from extreme_xos import ExtremeXOS
-from paloalto_panos import PaloAltoPANOS
-from a10_acos import A10ACOS
-from citrix_netscaler import CitrixNetscaler
-from linux import Linux
-from sun_sunos import SunSUNOS
-from freebsd import FreeBSD
-from iij_seil import IIJSeil
-from yamaha_rtx import YamahaRTX
-from fortinet_fortios import FortiOs
-from unknown import Unknown
+from sysdescrparser.aruba import Aruba
+from sysdescrparser.cisco_asa import CiscoASA
+from sysdescrparser.cisco_ios import CiscoIOS
+from sysdescrparser.cisco_nxos import CiscoNXOS
+from sysdescrparser.cisco_iosxe import CiscoIOSXE
+from sysdescrparser.cisco_iosxr import CiscoIOSXR
+from sysdescrparser.mikrotik_routeros import MikroTikRouterOS
+from sysdescrparser.juniper_junos import JuniperJunos
+from sysdescrparser.juniper_screenos import JuniperScreenOS
+from sysdescrparser.brocade_ironware import BrocadeIronWare
+from sysdescrparser.brocade_serveriron import BrocadeServerIron
+from sysdescrparser.brocade_networkos import BrocadeNetworkOS
+from sysdescrparser.foundry_ironware import FoundryIronWare
+from sysdescrparser.arista_eos import AristaEOS
+from sysdescrparser.hp_procurve import HPProCurve
+from sysdescrparser.extreme_xos import ExtremeXOS
+from sysdescrparser.paloalto_panos import PaloAltoPANOS
+from sysdescrparser.a10_acos import A10ACOS
+from sysdescrparser.citrix_netscaler import CitrixNetscaler
+from sysdescrparser.linux import Linux
+from sysdescrparser.sun_sunos import SunSUNOS
+from sysdescrparser.freebsd import FreeBSD
+from sysdescrparser.iij_seil import IIJSeil
+from sysdescrparser.yamaha_rtx import YamahaRTX
+from sysdescrparser.fortinet_fortios import FortiOs
+from sysdescrparser.unknown import Unknown
 
 
 def sysdescrparser(sysdescr):

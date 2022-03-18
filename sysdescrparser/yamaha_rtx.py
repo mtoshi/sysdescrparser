@@ -4,7 +4,7 @@
 
 
 import re
-from yamaha import Yamaha
+from sysdescrparser.yamaha import Yamaha
 
 
 # pylint: disable=no-member

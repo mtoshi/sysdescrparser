@@ -4,7 +4,7 @@
 
 
 import re
-from iij import IIJ
+from sysdescrparser.iij import IIJ
 
 
 # pylint: disable=no-member

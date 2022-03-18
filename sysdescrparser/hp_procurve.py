@@ -4,7 +4,7 @@
 
 
 import re
-from hp import HP
+from sysdescrparser.hp import HP
 
 
 # pylint: disable=no-member

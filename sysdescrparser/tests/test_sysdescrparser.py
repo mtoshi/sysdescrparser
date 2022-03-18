@@ -5,8 +5,8 @@
 import unittest
 import os
 import json
-from sysdescrparser import sysdescrparser
-from sysdescr import SysDescr
+from sysdescrparser.sysdescrparser import sysdescrparser
+from sysdescrparser.sysdescr import SysDescr
 
 
 class UnitTests(unittest.TestCase):

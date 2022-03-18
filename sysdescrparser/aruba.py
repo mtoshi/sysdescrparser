@@ -3,7 +3,7 @@
 """sysdescrparser.aruba."""
 
 import re
-from sysdescr import SysDescr
+from sysdescrparser.sysdescr import SysDescr
 
 
 # pylint: disable=no-name-in-module

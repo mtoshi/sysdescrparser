@@ -2,7 +2,7 @@
 
 """sysdescrparser.mikrotik_routeros."""
 
-from sysdescr import SysDescr
+from sysdescrparser.sysdescr import SysDescr
 import re
 
 

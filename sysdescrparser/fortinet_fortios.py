@@ -1,5 +1,5 @@
 import re
-from fortinet import FortiNet
+from sysdescrparser.fortinet import FortiNet
 
 
 class FortiOs(FortiNet):

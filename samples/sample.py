@@ -4,7 +4,7 @@
 
 import os
 import json
-from sysdescrparser import sysdescrparser
+from sysdescrparser.sysdescrparser import sysdescrparser
 
 
 def main():
