@@ -4,7 +4,7 @@
 
 
 import re
-from foundry import Foundry
+from sysdescrparser.foundry import Foundry
 
 
 # pylint: disable=no-member

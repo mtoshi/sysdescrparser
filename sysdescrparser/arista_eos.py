@@ -4,7 +4,7 @@
 
 
 import re
-from arista import Arista
+from sysdescrparser.arista import Arista
 
 
 # pylint: disable=no-member

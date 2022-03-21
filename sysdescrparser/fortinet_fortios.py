@@ -1,32 +1,24 @@
-# -*- coding: utf-8 -*-
-
-"""sysdescrparser.cisco_iosxr."""
-
-
 import re
-from sysdescrparser.cisco import Cisco
+from sysdescrparser.fortinet import FortiNet
 
 
-# pylint: disable=no-member
-class CiscoIOSXR(Cisco):
+class FortiOs(FortiNet):
+    """Class FortiOs.
 
-    """Class CiscoIOSXR.
-
-    SNMP sysDescr for CiscoIOSXR.
+    SNMP sysDescr for fortigate.
 
     """
 
     def __init__(self, raw):
         """Constructor."""
-        super(CiscoIOSXR, self).__init__(raw)
-        self.os = 'IOSXR'
+        super(FortiOs, self).__init__(raw)
+        self.os = 'fortios'
         self.model = self.UNKNOWN
         self.version = self.UNKNOWN
 
     def parse(self):
         """Parse."""
-        regex = (r'Cisco\s+IOS\s+XR\s+'
-                 r'Software\s+\((.*)\),\s+Version\s+(.*\[.*\])')
+        regex = r'Fortinet Firewall (.*) v((\d\.)*\d)'
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:

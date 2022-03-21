@@ -4,7 +4,7 @@
 
 
 import re
-from a10 import A10
+from sysdescrparser.a10 import A10
 
 
 # pylint: disable=no-member

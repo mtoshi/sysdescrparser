@@ -4,7 +4,7 @@
 
 
 import re
-from paloalto import PaloAlto
+from sysdescrparser.paloalto import PaloAlto
 
 
 # pylint: disable=no-member

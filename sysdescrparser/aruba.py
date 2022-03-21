@@ -1,32 +1,33 @@
 # -*- coding: utf-8 -*-
 
-"""sysdescrparser.cisco_iosxr."""
-
+"""sysdescrparser.aruba."""
 
 import re
-from sysdescrparser.cisco import Cisco
+from sysdescrparser.sysdescr import SysDescr
 
 
+# pylint: disable=no-name-in-module
 # pylint: disable=no-member
-class CiscoIOSXR(Cisco):
+class Aruba(SysDescr):
 
-    """Class CiscoIOSXR.
+    """Class Aruba.
 
-    SNMP sysDescr for CiscoIOSXR.
+    This class is only for vendor definition.
 
     """
 
     def __init__(self, raw):
         """Constructor."""
-        super(CiscoIOSXR, self).__init__(raw)
-        self.os = 'IOSXR'
+        super(Aruba, self).__init__(raw)
+        self.vendor = 'ARUBA'
         self.model = self.UNKNOWN
+        self.os = 'ArubaOS'
         self.version = self.UNKNOWN
 
     def parse(self):
-        """Parse."""
-        regex = (r'Cisco\s+IOS\s+XR\s+'
-                 r'Software\s+\((.*)\),\s+Version\s+(.*\[.*\])')
+        """Parsing for sysDescr value."""
+        regex = (r'ArubaOS'
+                 r'.* \(MODEL: (?:Aruba)?(.*)\), Version (.*)')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:

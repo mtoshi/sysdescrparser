@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
-"""sysdescrparser.juniper."""
+"""sysdescrparser.FortiNet."""
 
 from sysdescrparser.sysdescr import SysDescr
 
 
 # pylint: disable=no-name-in-module
-class Juniper(SysDescr):
+class FortiNet(SysDescr):
 
-    """Class Juniper.
+    """Class FortiNet.
 
     This class is only for vendor definition.
 
@@ -16,8 +16,8 @@ class Juniper(SysDescr):
 
     def __init__(self, raw):
         """Constructor."""
-        super(Juniper, self).__init__(raw)
-        self.vendor = 'JUNIPER'
+        super(FortiNet, self).__init__(raw)
+        self.vendor = 'fortinet'
         self.model = self.UNKNOWN
         self.os = self.UNKNOWN
         self.version = self.UNKNOWN

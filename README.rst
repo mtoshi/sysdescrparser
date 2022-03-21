@@ -17,17 +17,17 @@ If you have any need to handle the equipment that this module does not support,
 then please send the sysDescr value to this package author.
 Or, please contact using function of the such as github pull request.
 
-.. image:: https://secure.travis-ci.org/mtoshi/sysdescrparser.svg?branch=master
-   :target: http://travis-ci.org/mtoshi/sysdescrparser
-.. image:: https://coveralls.io/repos/mtoshi/sysdescrparser/badge.svg?branch=master
-   :target: https://coveralls.io/r/mtoshi/sysdescrparser?branch=master
+.. image:: https://secure.travis-ci.org/rlaneyjr/sysdescrparser.svg?branch=master
+   :target: http://travis-ci.org/rlaneyjr/sysdescrparser
+.. image:: https://coveralls.io/repos/rlaneyjr/sysdescrparser/badge.svg?branch=master
+   :target: https://coveralls.io/r/rlaneyjr/sysdescrparser?branch=master
 .. image:: https://img.shields.io/pypi/v/sysdescrparser.svg
    :target: https://pypi.python.org/pypi/sysdescrparser/
    :alt: Latest Version
 
 Requirements
 -------------
-* Python2.7, 3.5, 3.6, 3.7, PyPy.
+* Python3.8, 3.9, 3.10, PyPy.
 
 Instration
 -----------
@@ -37,7 +37,7 @@ Instration
     
     or
     
-    $ git clone https://github.com/mtoshi/sysdescrparser
+    $ git clone https://github.com/rlaneyjr/sysdescrparser
     $ cd sysdescrparser
     $ sudo python setup.py install
 
@@ -88,7 +88,7 @@ Parsing logic and Support Vendor and OS
 ----------------------------------------
 * About parsing logic and support of vendor and os.
     Of course you are able to see this python code and also see how it works easily from sample data.
-    https://github.com/mtoshi/sysdescrparser/blob/master/samples/sample_data.json
+    https://github.com/rlaneyjr/sysdescrparser/blob/master/samples/sample_data.json
     It will be able to understand almost.
     (Sometimes, using hard code. And also using UNKNOWN values.)
     This sample data is also used directly by code test.

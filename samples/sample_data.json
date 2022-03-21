@@ -40,6 +40,46 @@
     },
 
     {
+        "raw": "Cisco IOS Software [Everest], Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M), Experimental Version 16.4.20170410:165034 [v164_throttle-BLD-BLD_V164_THROTTLE_LATEST_20170410_174845 105]",
+        "vendor": "CISCO",
+        "os": "IOSXE",
+        "model": "CAT3K_CAA-UNIVERSALK9-M",
+        "version": "16.4.20170410:165034"
+    },
+
+    {
+        "raw": "Cisco IOS XE Software, Version 16.06.05 Cisco IOS Software [Everest], ISR Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.6.5, RELEASE SOFTWARE (fc3)",
+        "vendor": "CISCO",
+        "os": "IOSXE",
+        "model": "X86_64_LINUX_IOSD-UNIVERSALK9-M",
+        "version": "16.06.05"
+    },
+
+    {
+        "raw": "Cisco IOS Software, IOS-XE Software, Catalyst 4500 L3 Switch Software (cat4500e-UNIVERSALK9-M), Version 03.03.02.SG RELEASE SOFTWARE (fc1)",
+        "vendor": "CISCO",
+        "os": "IOSXE",
+        "model": "cat4500e-UNIVERSALK9-M",
+        "version": "03.03.02.SG"
+    },
+
+    {
+        "raw": "Cisco IOS Software [Denali], Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M), Version 16.3.1a, RELEASE SOFTWARE (fc4)",
+        "vendor": "CISCO",
+        "os": "IOSXE",
+        "model": "CAT3K_CAA-UNIVERSALK9-M",
+        "version": "16.3.1a"
+    },
+
+    {
+        "raw": "Cisco IOS Software [Fuji], ASR1000 Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.7.1prd4, RELEASE SOFTWARE (fc1)",
+        "vendor": "CISCO",
+        "os": "IOSXE",
+        "model": "X86_64_LINUX_IOSD-UNIVERSALK9-M",
+        "version": "16.7.1prd4"
+    },
+
+    {
         "raw": "Cisco NX-OS(tm) cgr1000, Software (cgr1000-uk9), Version 5.2(1)CG2(1), Interim version 5.2(1)CG2(0.167), RELEASE SOFTWARE Copyright (c) 2002-2011 by Cisco Systems, Inc. Compiled 1/1/2012 1:00:00",
         "vendor": "CISCO",
         "os": "NXOS",
@@ -93,6 +133,38 @@
         "os": "IOSXR",
         "model": "Cisco 12404/PRP",
         "version": "3.6.0[00]"
+    },
+
+    {
+        "raw": "RouterOS 6.43.4 (stable) on RB750",
+        "vendor": "MikroTik",
+        "os": "RouterOS",
+        "model": "RB750",
+        "version": "6.43.4"
+    },
+
+    {
+        "raw": "RouterOS 6.43.4 (stable) on RB951-2n",
+        "vendor": "MikroTik",
+        "os": "RouterOS",
+        "model": "RB951-2n",
+        "version": "6.43.4"
+    },
+
+    {
+        "raw": "RouterOS 6.47 (stable) on CCR1036-12G-4S",
+        "vendor": "MikroTik",
+        "os": "RouterOS",
+        "model": "CCR1036-12G-4S",
+        "version": "6.47"
+    },
+
+    {
+        "raw": "RouterOS 6.44.5 (long-term) on CCR1036-12G-4S",
+        "vendor": "MikroTik",
+        "os": "RouterOS",
+        "model": "CCR1036-12G-4S",
+        "version": "6.44.5"
     },
 
     {
@@ -593,34 +665,58 @@
 
     {
         "raw": "Linux HOSTNAME 3.2.0-4-amd64 #1 SMP Debian 3.2.65-1+deb7u1",
-        "vendor": "UNKNOWN",
-        "os": "LINUX",
+        "vendor": "LINUX",
+        "os": "LINUX_KERNEL",
         "model": "UNKNOWN",
         "version": "3.2.0-4-amd64"
     },
 
     {
         "raw": "Linux HOSTNAME 2.6.32-358.6.2.el6.x86_64 #1 SMP Thu May 16 20:59:36 UTC 2013 x86_64",
-        "vendor": "UNKNOWN",
-        "os": "LINUX",
-        "model": "UNKNOWN",
-        "version": "2.6.32-358.6.2.el6.x86_64"
+        "vendor": "CENTOS",
+        "os": "CENTOS",
+        "model": "2.6.32-358.6.2.el6.x86_64",
+        "version": "6.0"
     },
 
     {
         "raw": "Linux HOSTNAME 2.6.21-1.3194.fc7 #1 SMP Wed May 23 22:35:01 EDT 2007 i686",
-        "vendor": "UNKNOWN",
-        "os": "LINUX",
+        "vendor": "LINUX",
+        "os": "LINUX_KERNEL",
         "model": "UNKNOWN",
         "version": "2.6.21-1.3194.fc7"
     },
 
     {
         "raw": "Linux hostname 3.2.0-56-generic-pae #86-Ubuntu SMP Wed Oct 23 17:51:27 UTC 2013 i686",
-        "vendor": "UNKNOWN",
-        "os": "LINUX",
-        "model": "UNKNOWN",
-        "version": "3.2.0-56-generic-pae"
+        "vendor": "CANONICAL",
+        "os": "UBUNTU_LINUX",
+        "model": "3.2.0-56-generic-pae",
+        "version": "UNKNOWN"
+    },
+
+    {
+        "raw": "Linux ubuntu-bionic 4.15.0-70-generic #79-Ubuntu SMP Tue Nov 12 10:36:11 UTC 2019 x86_64",
+        "vendor": "CANONICAL",
+        "os": "UBUNTU_LINUX",
+        "model": "4.15.0-70-generic",
+        "version": "18.04"
+    },
+
+    {
+        "raw": "Linux ubuntu-xenial 4.4.0-169-generic #198-Ubuntu SMP Tue Nov 12 10:38:00 UTC 2019 x86_64",
+        "vendor": "CANONICAL",
+        "os": "UBUNTU_LINUX",
+        "model": "4.4.0-169-generic",
+        "version": "16.04"
+    },
+
+    {
+        "raw": "Linux vagrant-ubuntu-trusty-64 3.13.0-170-generic #220-Ubuntu SMP Thu May 9 12:40:49 UTC 2019 x86_64",
+        "vendor": "CANONICAL",
+        "os": "UBUNTU_LINUX",
+        "model": "3.13.0-170-generic",
+        "version": "14.04"
     },
 
     {
@@ -789,6 +885,30 @@
         "os": "RTX",
         "model": "RTX1100",
         "version": "Rev.8.03.92"
+    },
+
+    {
+        "raw": "ArubaOS (MODEL: 515), Version 8.6.0.4-8.6.0.4",
+        "vendor": "ARUBA",
+        "os": "ArubaOS",
+        "model": "515",
+        "version": "8.6.0.4-8.6.0.4"
+    },
+
+    {
+        "raw": "ArubaOS (MODEL: Aruba7010), Version 8.3.0.0 (64659)",
+        "vendor": "ARUBA",
+        "os": "ArubaOS",
+        "model": "7010",
+        "version": "8.3.0.0 (64659)"
+    },
+
+    {
+        "raw": "ArubaOS (MODEL: Aruba7210), Version 6.5.1.6 (60228)",
+        "vendor": "ARUBA",
+        "os": "ArubaOS",
+        "model": "7210",
+        "version": "6.5.1.6 (60228)"
     },
 
     {

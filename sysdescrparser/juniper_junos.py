@@ -4,7 +4,7 @@
 
 
 import re
-from juniper import Juniper
+from sysdescrparser.juniper import Juniper
 
 
 # pylint: disable=no-member

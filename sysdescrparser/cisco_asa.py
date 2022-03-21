@@ -1,37 +1,37 @@
 # -*- coding: utf-8 -*-
 
-"""sysdescrparser.cisco_iosxr."""
-
+"""sysdescrparser.cisco_iosxe."""
 
 import re
 from sysdescrparser.cisco import Cisco
 
 
 # pylint: disable=no-member
-class CiscoIOSXR(Cisco):
+class CiscoASA(Cisco):
+    """Class CiscoASA.
 
-    """Class CiscoIOSXR.
-
-    SNMP sysDescr for CiscoIOSXR.
+    SNMP sysDescr for CiscoASA.
 
     """
 
     def __init__(self, raw):
         """Constructor."""
-        super(CiscoIOSXR, self).__init__(raw)
-        self.os = 'IOSXR'
+        super(CiscoASA, self).__init__(raw)
+        self.os = 'Adaptive_Security_Appliance'
         self.model = self.UNKNOWN
         self.version = self.UNKNOWN
 
     def parse(self):
         """Parse."""
-        regex = (r'Cisco\s+IOS\s+XR\s+'
-                 r'Software\s+\((.*)\),\s+Version\s+(.*\[.*\])')
+        regex = (r'Cisco Adaptive Security Appliance '
+                 r'Version (\d.*)')
         pat = re.compile(regex)
         res = pat.search(self.raw)
         if res:
-            self.model = res.group(1)
-            self.version = res.group(2)
+            self.version = res.group(1)
             return self
 
         return False
+
+
+
