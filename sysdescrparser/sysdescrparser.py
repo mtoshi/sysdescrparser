@@ -72,11 +72,11 @@ def sysdescrparser(sysdescr):
 
          Currently supported Vendor and OS.
 
-         https://github.com/mtoshi/sysdescrparser/blob/master/samples/sample_data.json
+         https://github.com/rlaneyjr/sysdescrparser/blob/master/samples/sample_data.json
 
     See also:
 
-         https://github.com/mtoshi/sysdescrparser/blob/master/README.rst
+         https://github.com/rlaneyjr/sysdescrparser/blob/master/README.rst
 
 
     """
